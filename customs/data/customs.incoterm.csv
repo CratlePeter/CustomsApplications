@@ -1,0 +1,12 @@
+id,name,show_shipping_cost
+EXW,"EXW - Ex-Works",1
+FCA,"FCA - Free Carrier",1
+FAS,"FAS - Free Alongside Ship",1
+FOB,"FOB - Free On Board",1
+CFR,"CFR - Cost and Freight",0
+CIF,"CIF - Cost Insurance and Freight",0
+CPT,"CPT - Cost Paid To",1
+CIP,"CIP - Carrier and Insurance Paid To",1
+DPU,"DPU - Delivered At Place Unloaded",0
+DAP,"DAP - Delivered At Place",0
+DDP,"DDP - Delivered Duty Paid",0

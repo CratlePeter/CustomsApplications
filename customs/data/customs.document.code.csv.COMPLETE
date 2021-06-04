@@ -1,0 +1,743 @@
+code,type_of_declaration,declaration_level,name,details
+9001,Both,Item,"Declaration of preferential origin on an invoice or other commercial document bearing as appropriate an original signature or approval number of the exporter
+See also:
+Y019 where the declaration shows that the goods originate in
+Iceland;
+Y020 where the declaration shows that the goods originate in
+Norway; and
+Y021 where the document shows that goods originate in the EEA.","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the invoice number(s).",
+9004,Import,Item,Certificates of origin for steel quotas.,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA, XB
+Reference details: Enter GBAOG
+followed by its number.",
+9005,Import,Item,"All import documents (including Department of Health) licences, permits or certificates other than those specifically identified by other document codes","With the exception of FP, HP, the U series and XF, enter the appropriate status code listed in document status codes for harmonised declarations",
+9100,Import,Item,"Firearms: Open Individual Licence or 
+Firearms: Specific Individual Licence 
+Nuclear Materials: Open Individual Licence
+Nuclear Materials: Specific Individual Licence","With the exception of FP, HP, IA, IE, IP, IS, SP, TP, XB, XF, XU, XW, enter appropriate status code listed in document status codes for harmonised declarations.",
+9101,Import,Item,Chemical weapons: pre-cursor chemicals,"With the exception of FP, HP, IA, IE, IP, IS, SP, TP, XB, XF, XU, XW, enter appropriate status code listed in document status codes for harmonised declarations.",
+9102,Import,Item,"Standard Individual Transhipment Licence
+Open General Transhipment Licence","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AF, AP, AT, GE, GP, LE, LP, XX.",
+9103,Import,Item,"Detonation Resistance Test (DRT)
+HSE Certificate of Exemption","Insert any status code except those in the E, I or U series.",
+9104,Export,Item,"Standard Individual Export Licence: Military Goods and dual use goods subject to UK export controls                                                                                                                                                                Global Project Licence
+Standard Individual Transhipment Licence
+Open Individual Export Licence: military or dual use goods
+ subject to national control
+Open General Export Licence (Military Goods) or dual use goods
+ subject to national control
+Open General Transhipment Licence","With the exception of AG, AS, EL, IE, IS, JE, JS, UE, UP, US, XB, XF, XU, enter appropriate status code listed in document status codes for harmonised declarations.
+
+For supplementary declarations use EA, IA, JA or UA as appropriate (see document status codes for harmonised declarations for definitions).",
+9105,Export,Item,"Standard Individual Export Licence: radioactive sources 
+Open Individual Export Licence: radioactive sources 
+Open General Export Licence: radioactive sources","With the exception of AG, AS, EL, IE, IS, JE, JS, UE, UP, US, XB, XF, XU, enter appropriate status code listed in document status codes for harmonised declarations.
+
+For supplementary declarations use EA, IA, JA or UA as appropriate (see document status codes for harmonised declarations for definitions).",
+9106,Export,Item,Authorisation for torture goods,"With the exception of AG, AS, EL, IE, IS, JE, JS, UE, UP, US, XB, XF, XU, enter appropriate status code listed in document status codes for harmonised declarations.
+
+For supplementary declarations use EA, IA, JA or UA as appropriate (see document status codes for harmonised declarations for definitions).",
+9107,Export,Item,"UK Standard Individual Export Licence (Form C). Objects of cultural interest (Control) Order
+UK Open General Export Licence
+UK Open Individual Export Licence","With the exception of EA, EE, EL, EP, ES, XB enter appropriate status code listed in document status codes for harmonised declarations.",
+9108,Export,Item,"EU Specific Open Licence
+EU General Open Licence","With the exception of EA, EE, EL, EP, ES, XB enter appropriate status code listed in document status codes for harmonised declarations.",
+9111,Both,Item,Home Office open individual licence for drugs precursor chemicals,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): FP, XX.",
+9112,Both,Item,Drugs Precursor Chemicals Individual Licence,"Use one of the following status codes
+(see document status codes for harmonised declarations for definitions): AT
+
+XX – Ex-heading  goods for which the document does not apply",
+9113,Both,Item,Controlled Drugs Individual Licence,"Use one of the following status codes
+(see document status codes for harmonised declarations for definitions):
+AE – Document attached – exhausted by this entry
+
+XX – Ex-heading  goods for which the document does not apply",
+9114,Both,Item,Controlled Drugs Open Individual Licence,"Use one of the following status codes
+(see document status codes for harmonised declarations for definitions): FP – Facsimile  attached – part use
+
+XX – Ex-heading  goods for which the document does not apply",
+9115,Import,Item,Quarantine Release Certificate,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AG, AP, AS, JE, JP, JS, XA or XX.",
+9116,Import,Item,Rabies Import Licence,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, XX.",
+9117,Import,Item,Fera Letter of Authority,"AG, AP, JE, JP",
+9118,Import,Item,Import permit for harp and hooded seal skins,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AP, AS, AT, XX.",
+9119,Import,Item,Letter headed licence for importation  of hares,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, XX.",
+9120,Import,Item,Importation of animal pathogens licence under the Importation of Animal Pathogens Order 1980 (IAPO),"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AP, AS, AT, XX.",
+9121,Import,Item,DEFRA or Animal Health import licence/authorisation for products of animal origin,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, IA, IE, IP, IS and XX.",
+9200,Import,Item,"Declaration of particulars relating to Valuation Methods 2, 3, 4a,
+4b, 5 and 6.
+In the UK Forms C105B and C109B support Valuation Methods 2,
+3, 4a, 4b, 5 and 6.
+C109B forms are registered with HMRC and a GVS reference allocated.
+Note: A document is not declared for Valuation Method 7 (SPV).
+Status Code                                Meaning
+
+EP                                                   C109B registered with Customs  (GVS
+                                                        reference)
+JE                                                    Valuation declaration may be required
+                                                        (currently for use by CFSP Traders) 
+AE                                                   C105B to be produced on request
+XF                                                   C105B to be produced on request on
+                                                        removal from warehouse.","The format of a GVS reference is nnnannnnnn
+a – ‘B’ for a C109B
+n – a digit 
+
+There is no formal reference for a C105B. Declarant has the option to enter a reference.",
+9300,Both,Item,"(T2) Air Manifest
+Air Simplified procedure","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AS, AT, GE, GP, JA, JE, JP, JS.",
+9578,Import,Item,"Form C578 – undertaking to produce Form C105A within 14 days
+
+Status                                 Meaning
+Code
+AE                                        C578 (undertaking to produce C105A
+                                             within 14 days)
+",,
+9AID,Import,Item,Evidence required by CPC instructions for claiming relief from all charges except VAT.,"Use one of the following status codes, (see document status codes for harmonised declarations):
+JP – Evidence  required is available from trader
+UP – Evidence  required is unavailable
+Reference details: When details have been included in an AI statement then enter ‘see relevant AI statement’. Where no relevant AI statement applies and therefore reference cannot be made to ‘see relevant AI statement’ a traders own reference should be entered.",
+9AIE,Import,Item,"Evidence required by CPC instructions, relief from Excise Duty","Use one of the following status codes, (see document status codes for harmonised declarations):
+JP – Evidence  required is available from trader
+UP – Evidence  required is unavailable",
+9AIV,Import,Item,"Evidence required by CPC instructions for claiming relief from
+VAT.","Use one of the following status codes, (see document status codes for harmonised declarations):
+JP – Evidence  required is available from trader
+UP – Evidence  required is unavailable
+Reference details: When details have been included in an AI statement then enter ‘see relevant AI statement’. Where no relevant AI statement applies and therefore reference cannot be made to ‘see relevant AI statement’ a traders own reference should be entered.",
+9CLM,Export,Header,"RPA Claim Reference and Claim Type [Box C9 on Form C88 (CAP)] Note: This is not a separate document but must be included on
+all CAP Export declarations.","Document Reference: the Claim
+Reference;
+Part: the Claim Type.
+Note: No status code (as contained in
+document status codes for harmonised declarations) is required.",
+9DCR,Both,Header,Declaration UCR and UCR part,"As specified in Trade Tariff: imports and community transport inwards, section 5
+Notes:
+1. This Document code is only to be
+used for identifying the data on a paper SAD.
+2. CHIEF data is submitted in specific EDI
+data element(s) or screen field(s). Note: No status code (as contained in document status codes for harmonised declarations) is required.",
+9DCS,Both,Header,Declaration UCR and UCR part when recording multiple DUCR/ Parts on Supplementary declarations,"As specified in Trade Tariff: imports and community transport inwards, section 5
+Note: No status code (as contained in document status codes for harmonised declarations) is required.",
+9ING,Export,Item,"RPA Ingredient details [Box C44 on Form C88 (CAP) CIE]
+Note: This is not a separate document but must be included as appropriate on CAP Export declarations for processed goods without a registered recipe.","Document Reference: the Ingredient code;
+Quantity: enter the quantity of the ingredient expressed in Kilograms.
+Note: No status code (as contained in document status codes for harmonised declarations) is required.",
+9MCR,Both,Header,"Master Unique Consignment Reference
+Notes:
+1. This Document code is only to be used for identifying the data on a paper SAD.
+2. CHIEF data is submitted in specific EDI data element(s) or screen field(s).","As specified in Trade Tariff: imports and community transport inwards, section 5
+Note: No status code (as contained in document status codes for harmonised declarations) is required.",
+9RCP,Export,Item,"RPA recipe code [Box C44 on Form C88(CAP)]
+Note: This is not a separate document but must be included as appropriate on CAP Export declarations for processed goods without a registered recipe.","Reference: enter the appropriate recipe number.
+Note: No status code (as contained in document status codes for harmonised declarations) is required.",
+9SDC,Export,Item,"RPA Supplementary Declaration (SD) codes and (where appropriate) associated percentages.
+Note: This is not a separate document but may be included on
+CAP Export declarations for certain commodities.","Document Reference: the Supplementary Declaration code; Quantity: the (optional) percentage to 2 decimal places.
+Note: No status code (as contained in
+document status codes for harmonised declarations) is required.",
+9WKS,Import,Item,"Box 22 has been completed with ‘GB’ and the goods have been invoiced in more than one currency, or a fixed rate of exchange, as stipulated in the contract of sale, is being used.","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AP, GE, JE, JP, LE, LP, UE.
+Enter ‘See attached worksheet/ valuation declaration’ as appropriate. If a fixed rate of exchange has been used this is also to be declared on the attached document",
+A001,Import,Item,Certificate of authenticity (“EMPEROR” TABLE GRAPES),Use status code AC (see document status codes for harmonised declarations for definitions).,
+A004,Import,Item,Certificate of authenticity (TOBACCO),Use status code AC (see document status codes for harmonised declarations for definitions).,
+A008,Import,Item,"Certificate of authenticity fresh sweet oranges “high quality” to support a claim to tariff quota on produce originating in certain
+3rd countries","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+A009,Import,Item,Certificate of authenticity (only for mineolas) to support a claim to tariff quota to support a claim to tariff quota on produce originating in certain 3rd countries,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+A010,Import,Item,Certificate of authenticity concentrated orange juice to support a claim to tariff quota on produce originating in certain 3rd countries,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+A014,Import,Item,Certificate of authenticity for hand-made products imported under Community Tariff quotas,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+A015,Import,Item,Certificate of authenticity for hand-woven/hand-loom  products imported under Community Tariff quotas,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+A017,Import,Item,"Certificate of authenticity Commission Regulation (EC) No 936/
+97 of 27 May 1997 opening and providing for the administration of tariff quotas for high-quality fresh, chilled and frozen beef and for frozen buffalo meat","With the exception of FP, HP, the U series and XA, enter appropriate status code listed in document status codes for harmonised declarations.",
+A019,Import,Item,Certificate de quality (NITRATE FROM CHILE),Use status code AC (see document status codes for harmonised declarations for definitions).,
+A022,Import,Item,"Certificate of authenticity Basmati Rice for export to the
+European Community","With the exception of FP, HP, the U series and XA, enter appropriate status code listed in document status codes for harmonised declarations.",
+A023,Import,Item,"Certificate of authenticity Commission Regulation 481/2012  of
+7 June 2012 laying down rules for the management of a tariff quota for high quality beef for export into the European community","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA.
+Also insert the serial number of the certificate.",
+A119,Import,Item,Airworthiness certificate,"Only status codes AE and GE are permitted (see document status codes for harmonised declarations for definitions).
+Faxed copy not acceptable.",
+C001,Import,Item,Attestation of Equivalence / control  attestation Commission Regulation (EEC) No 3076/78 of 21 December 1978 on the importation  of hops from non-member countries,Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC or XX.,
+C006,Import,Item,Export Permit,"Use one of the following status codes (see Appendix C10 for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the permit. Where sequentially numbered insert the lowest to highest serial numbers concerned, i.e. document code +0054037-0062047: status code. Where not sequentially numbered insert the serial number of each concerned.",
+C013,Import,Item,Certificate IMA 1,"With the exception of FP, HP, the U series and XA, enter appropriate status code listed in document status codes for harmonised declarations.",
+C014,Import,Item,Wine documentVI1 ,"With the exception of FP, HP, the U series and XA, enter the appropriate status code listed in document status codes for harmonised declarations.",
+C015,Import,Item,Wine documentVI2 extract,"With the exception of FP, HP, the U series and XA, enter the appropriate status code listed in document status codes for harmonised declarations.",
+C017,Import,Item,"Wine documentVI1 annotated in compliance with Commission
+Regulation (EC) No 555/08, Article 5O C2)","With the exception of FP, HP, the U series and XA, enter appropriate status code listed in document status codes for harmonised declarations.",
+C018,Import,Item,"Wine documentVI2 extract annotated in compliance with
+Commission Regulation (EC) No 555/08, Article 5O C2)","With the exception of FP, HP, the U series and XA, enter appropriate status code listed in document status codes for harmonised declarations.",
+C019,Both,Item,"Authorisation to use outward processing (i.e. Customs procedure
+‘OP’).
+See also:
+N990 for declaring AS, EU, PC or TA
+Y009 for declaring OT
+C601 for declaring IP","Reference: OP authorisation reference as defined under Box 44 CUSTOMS SCHEMES.
+Faxed copy not acceptable.
+Note: No status code (as contained in document status codes for harmonised declarations) is required.",
+C026,Import,Item,"Certificate or certificate of registration in a herdbook for the administration of tariff quotas for imports of bulls, cows and heifers other than for slaughter of certain Alpine and mountain breeds","With the exception of FP, HP, the U series and XA, enter appropriate status code listed in document status codes for harmonised declarations.",
+C027,Import,Item,"Pedigree certificate for the administration of tariff quotas for imports of bulls, cows and heifers other than for slaughter of certain Alpine and mountain breeds","With the exception of FP, HP, the U series and XA, enter appropriate status code listed in document status codes for harmonised declarations.",
+C028,Import,Item,"Invoice declaration bearing the endorsement: “Specific origin rule laid down in Decision No 2/2000 of EC-Mexico Joint Council Annex III Appendix IIa Note 12.1”, to support a claim to tariff quota on certain motor vehicles of headings 8701, 8702 and 8704 originating in Mexico","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the invoice number(s).",
+C032,Import,Item,Transhipment Certificate – EXP.1 – to support the non-payment of customs duty on imports of goods which had previously been imported into and were in free circulation in one of the European Community’s Overseas Countries and Territories (OCTs),"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+C034,Export,Item,Kimberley Process Diamond Certificate,"Enter the unique certificate number.
+Use the following status code (see
+document status codes for harmonised declarations for definitions): GE.",
+C035,Import,Item,"Attestation of equivalence as mentioned  in Reg. (EEC) No
+3076/1978 (OJ L 367) on the importation  of hops from non- member countries","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, XX.",
+C036,Import,Item,"Supplementary document as mentioned  in Reg. (EC) No 1159/
+2003 (OJ L 162) for the import of cane sugar under certain tariff quotas and preferential agreements","With the exception of FP, HP, the U series and XA, enter appropriate status code listed in document status codes for harmonised declarations.",
+C038,Both,Item,"ICCAT bluefin tuna statistical document Council Regulation (EC) No 1984/2003  of 8 April 2003 introducing a system for the statistical monitoring of trade in bluefin tuna, swordfish and bigeye tuna within the Community","Enter the unique document number.
+Use one of the following status codes (see document status codes for harmonised declarations for definitions): AF, AT, GE, XX.",
+C039,Both,Item,"ICCAT swordfish statistical document Council Regulation (EC) No
+1984/2003  of 8 April 2003 introducing a system for the statistical monitoring of trade in bluefin tuna, swordfish and bigeye tuna within the Community","Enter the unique document number. Use one of the following status codes (see document status codes for harmonised declarations for definitions): AF, AT, GE, XX.",
+C040,Both,Item,"ICAT bigeye tuna statistical document or IOTC bigeye tuna statistical document Council Regulation (EC) No 1984/2003  of 8
+April 2003 introducing a system for the statistical monitoring of trade in bluefin tuna, swordfish and bigeye tuna within the Community","Enter the unique document number.
+Use one of the following status codes (see document status codes for harmonised declarations for definitions): AF, AT, GE, XX.",
+C041,Export,Item,"ICCAT bluefin tuna re-export certificate Council Regulation (EC) No 1984/2003  of 8 April 2003 introducing a system for the statistical monitoring of trade in bluefin tuna, swordfish and bigeye tuna within the Community","Enter the unique document number.
+Use one of the following status codes (see document status codes for harmonised declarations for definitions): AF, AT, GE, XX.",
+C042,Export,Item,"ICCAT swordfish re-export certificate Council Regulation (EC) No
+1984/2003  of 8 April 2003 introducing a system for the statistical monitoring of trade in bluefin tuna, swordfish and bigeye tuna within the Community","Enter the unique document number.
+Use one of the following status codes (see document status codes for harmonised declarations for definitions): AF, AT, GE, XX.",
+C043,Export,Item,"ICCAT bigeye tuna re-export certificate or IOTC bigeye tuna re- export certificate Council Regulation (EC) No 1984/2003  of 8
+April 2003 introducing a system for the statistical monitoring of trade in bluefin tuna, swordfish and bigeye tuna within the Community","Enter the unique document number.
+Use one of the following status codes (see document status codes for harmonised declarations for definitions): AF, AT, GE, XX.",
+C044,Import,Item,Certificate Mineral waters – NO (Norway),"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AP, GE, LE, LP, UE.",
+C046,Import,Item,Banana weighing certificate,"With the exception of FP, HP, the U series and XA, enter appropriate status code listed in document status codes for harmonised declarations.",
+C100,Both,Item,Registered Exporter (REX) Number,Document status code will be RE.,
+C600,Both,Item,Authorisation to operate a customs warehouse or to use the arrangements in a type E warehouse / operate a free zone,"Reference: Enter either :
+- details of guarantee (if applicable); or
+- if goods are being transferred from one warehouse/free zone to another, enter the code for the dispatching warehouse/free zone.
+Note: No status code (as contained in document status codes for harmonised declarations) is required.",
+C601,Both,Item,"Authorisation to use inward processing (i.e. Customs procedure
+‘IP’).
+See also:
+N990 for declaring AS, EU, PC or TA
+C019 for declaring OP
+Y009 for declaring OT","Reference: IP authorisation reference as defined under Box 44 CUSTOMS SCHEMES.
+Faxed copy not acceptable.
+Note: No status code (as contained in document status codes for harmonised declarations) is required.",
+C602,Import,Item,"Valuation Method 1. Declaration of particulars relating to customs value (continuation sheet D.V.1BIS).
+
+Status  Code                               Meaning
+
+AE                                                   C105A (continuation) attached
+",There is no formal reference for a C105A. Declarant has the option to enter a reference.,
+C603,Both,Item,Information sheet INF1,Use status code AC if certification is required otherwise use status code AE (see document status codes for harmonised declarations for definitions). Faxed copy not acceptable.,
+C604,Both,Item,Information sheet INF2,Use status code AC if certification is required otherwise use status code AE (see document status codes for harmonised declarations for definitions). Faxed copy not acceptable.,
+C605,Both,Item,Information sheet INF3,Use status code AC if certification is required otherwise use status code AE (see document status codes for harmonised declarations for definitions). Faxed copy not acceptable.,
+C606,Both,Item,Information sheet INF5,Use status code AC if certification is required otherwise use status code AE (see document status codes for harmonised declarations for definitions). Faxed copy not acceptable.,
+C607,Both,Item,Information sheet INF6,Use status code AC if certification is required otherwise use status code AE (see document status codes for harmonised declarations for definitions). Faxed copy not acceptable.,
+C608,Both,Item,Information sheet INF7,Use status code AC if certification is required otherwise use status code AE (see document status codes for harmonised declarations for definitions). Faxed copy not acceptable.,
+C609,Both,Item,Information sheet INF8,Use status code AC if certification is required otherwise use status code AE (see document status codes for harmonised declarations for definitions). Faxed copy not acceptable.,
+C610,Both,Item,Information sheet INF9,Use status code AC if certification is required otherwise use status code AE (see document status codes for harmonised declarations for definitions). Faxed copy not acceptable.,
+C611,Both,Item,Information document,Use status code AC if certification is required otherwise use status code AE (see document status codes for harmonised declarations for definitions).,
+C612,Both,Item,"(T2F) Internal Community transit declaration for Special
+Territories","The Movement Reference Number (MRN) for the Common/Community transit movement.
+Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AS, AT, GE, GP, JA, JE, JS.",
+C613,Both,Item,(T2) Consignment note CIM Rail Simplified procedure,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AS, AT, GE, GP, JA, JE, JS.",
+C614,Both,Item,(T2F) Consignment note CIM Rail Simplified procedure,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AS, AT, GE, GP, JA, JE, JS.",
+C615,Both,Item,"(T1) TR transfer note
+Inter-container Simplified procedure – goods moved by rail","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AS, AT, GE, GP, JA, JE, JS.",
+C616,Both,Item,"(T2) TR transfer note
+Inter-container Simplified procedure – goods moved by rail","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AS, AT, GE, GP, JA, JE, JS.",
+C617,Both,Item,"(T2F) TR transfer note
+Inter-container Simplified procedure – goods moved by rail","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AS, AT, GE, GP, JA, JE, JS.",
+C618,Both,Item,"(T2F) Air manifest
+Air Simplified procedure","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AS, AT, GE, GP, JA, JE, JS.",
+C619,Both,Item,"(T2F) Maritime manifest
+Sea Simplified procedure","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AS, AT, GE, GP, JA, JE, JS.",
+C620,Both,Item,"T2LF document
+Community Status document for Special Territories","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AS, AT, GE, GP, JA, JE, JS.",
+C621,Both,Item,"T2M document
+Community Status document for fish","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AS, AT, GE, GP, JA, JE, JS.",
+C623,Import,Item,"Transhipment Certificate – EXP.1 – to support a claim to tariff quota on fish and fishery products which had previously been imported into and were in free circulation in the European Community’s Overseas Countries and Territories (OCTs) such as Greenland, St Pierre and Miquelon","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+C624,Both,Item,(NATO) Form 302,"With the exception of FP, HP, the U series and XA, enter appropriate status code listed in document status codes for harmonised declarations.",
+C625,Both,Item,Rhine Manifest,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AS, AT, GE, GP, JA, JE, JS.",
+C626,Import,Item,Binding tariff information,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AP, GE, LE, LP, UE.
+Enter the BTI reference(s)  held for the goods described in Box 31 e.g.
+‘BTIUK54321’.",
+C627,Import,Item,Binding origin information,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the Binding Origin Information (BOI) number - i.e. UK
+2007/xxx",
+C629,Both,Item,"Pedigree and zootechnical certificate / Health certificate of the type required for pure-bred breeding animals of the bovine species. Commission Regulation (EEC) No 2342/92 of 7 August
+1992 on imports of pure-bred breeding animals of the bovine species from the third countries and the granting of export refunds thereon and repealing Regulation (EEC) No 1544/79","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AP, GE, LE, LP, UE.
+Use appropriate status code. See document status codes for harmonised declarations for definitions.",
+C633,Both,Item,Import & Export Processing Certificates (Fruit & Vegetables) Commission Regulation (EC) No 1580/07 as amended by Commission Regulation 1221/2008  from 1 July 2009 relaxes HMI conformity controls on a range of Fruit and Vegetables and also removes the requirement for a processing certificate to be issued by HMI for all Fruit and Vegetables. For statistical and monitoring purposes this document code must still be declared when importing or exporting  products intended  for processing,Use status code XW (see document status codes for harmonised declarations for definition).,
+C635,Import,Item,CITES Import Label. Commission Regulation (EC) No 1808/2001 of 30 August 2001 laying down detailed rules concerning the implementation of Council Regulation (EC) No 338/97 on the protection of species of wild fauna and flora by regulating trade therein,Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC or XX.,
+C638,Import,Item,CITES Import permit. Commission Regulation (EC) No 1808/2001 of 30 August 2001 laying down detailed rules concerning the implementation of Council Regulation (EC) No 338/97 on the protection of species of wild fauna and flora by regulating trade therein,Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC or XX.,
+C639,Import,Item,"CITES Import notification. Commission Regulation (EC) No 1808/
+2001 of 30 August 2001 laying down detailed rules concerning the implementation of Council Regulation (EC) No 338/97 on the protection of species of wild fauna and flora by regulating trade therein",Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC or XX.,
+C640,Import,Item,"Common Health Entry Document for Animals (CHED-A) Part 2, Section A of Annex II to Commission Implementing Regulation (EU) 2019/1715 (OJ L 261)) introducing a document for the declaration of and veterinary checks on animals from third countries entering the community","AE, JA, JE, LE, LP or XX",
+C641,Import,Item,"Catch document described in Reg. (EC) No 669/2003  (OJ L 97)
+for Dissostichus spp. (Toothfish)","Enter the unique document number.
+Use one of the following status codes (see document status codes for harmonised declarations for definitions): AG, IE, IP.",
+C644,Both,Item,"Certificate of inspection. Council Regulation (EEC) No 2092/91 of
+24 June 1991 on organic production of agricultural products and indications referring thereto on agricultural products and foodstuffs","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AP, GE, LE, LP, UE.",
+C645,Both,Item,"Certificate for military  equipment  Council Regulation (EC) No
+150/2003  of 21 January 2003 suspending import duties on certain weapons and military equipment","Enter MoD certificate reference number
+- in the format “UK/ .....”, inserting the relevant certificate number after “UK/”
+Faxed copy not acceptable.
+Use either status code JP or UP as appropriate (see document status codes for harmonised declarations for definitions).",
+C647,Both,Item,Confirmation of receipt of certain substances to the illicit manufacture of narcotic drugs and psychotropic substances,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AP, GE, LE, LP, UE.",
+C648,Export,Item,Boned meat certificate,Insert status codes AE or AP only.,
+C649,Export,Item,Refund certificate,"Insert status codes  IE, IP, IS or XA only.",
+C650,Both,Item,"Movement Document Regulation (EC) No 1013/2006  of 14 June
+2006 on shipments of waste.
+Note: Any HMRC requirement in relation to this document will be notified.","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AF, AT.",
+C652,Both,Item,"Accompanying documents for the carriage of wine products
+Commission Regulation (EC) No 884/2001  of 24 April 2001","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AP, GE, LE, LP, UE.",
+C655,Export,Item,"Certificate - product proof Commission Regulation (EEC) No 32/
+82 of 7 January 1982 laying down the conditions for granting special export refunds for beef and veal","With the exception of FP, HP, the U series and XA, enter appropriate status code listed in document status codes for harmonised declarations.",
+C656,Export,Item,"Catch document described in Reg. (EC) No 669/2003  (OJ L 97)
+for Dissostichus spp. (Toothfish)","Enter the unique document number.
+Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, IE, IP.",
+C657,Both,Item,"Sanitary certificate for the prevention, control and eradication of certain transmissible spongiform encephalopathies","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AP, GE, LE, LP, UE.",
+C673,Both,Item,"Illegal Unreported  and Unregulated  (IUU) Fishing Regulation Catch Certificate: Commission Regulation (EC) No 1010/2009 laying down detailed rules for the implementation of Council Regulation (EC) No 1005/2008  establishing a Community system to prevent, deter and eliminate illegal, unreported and unregulated fishing.
+Commission Regulation (EU) No 86/2010 amending Council
+Regulation No 1005/2008  and Commission Regulation (EC) No
+1010/2009","Use one of the following status codes: AE, AG, IE or IP (see document status codes for harmonised declarations for definitions).
+See also code Y927 which is to be declared for exempt fish and fish products.",
+C690,Import,Item,Forest Law Enforcement Governance and Trade Certificate (FLEGT) certificate: Council Regulation (EC) No 2173/2005 on the establishment of a FLEGT licensing scheme for imports of timber into the European Community. Article 4 of Council Regulation (EC) No 2173/2005 prohibits the import of FLEGT timber products from countries which have entered in to a Voluntary Partnership Agreement (VPA) with the EU unless they are covered by a valid FLEGT licence.,"Use one of the following status codes (see Appendix C10 for definitions) AE, AG, LE, XW and XX.",
+C710,Both,Item,Electronic INF's,"If you have an electronic INF submitted on the EU Central Trader Portal, enter document code C710 and status code AC, as well as the INF reference number",
+D003,Import,Item,"Production certificate. Council Regulation (EC) No 2320/97 of 17
+November 1997 imposing definitive anti-dumping duties on imports of certain seamless pipes and tubes of iron or non-alloy steel originating in Hungary, Poland, Russia, the Czech Republic, Romania and the Slovak Rep","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+D005,Import,Item,Commercial Invoice containing a signed declaration referring to the Undertaking offered by a particular company and accepted by the European Commission in respect of the terms of sale for the goods concerned (and which therefore exempts that company’s products from the application of Anti-Dumping duty),"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the invoice number(s).",
+D006,Import,Item,"Certificate of CCCME accompanying sales made subject to the undertaking (Regulation (EC) no. 1531/2002) Council Regulation (EC) No 1531/2002  of 14 August 2002 imposing a definitive anti-dumping duty on imports of colour television receivers originating in the People’s Republic of China, the Republic of Korea, Malaysia and Thailand","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+D007,Import,Item,Certificate declaring the chemical analysis of each grade of the product specified on the commercial invoice,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+D008,Import,Item,Commercial invoice with a signed declaration by a company official declaring that the goods were manufactured by a particular company (whose products do not attract the full (highest rate) of rate of Anti-Dumping duty payable),"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the invoice number(s).",
+D009,Import,Item,"Import Licence/Authorisation in respect of Potassium Chloride and mixtures imported from Belarus under Headings 3104 2050
+10, 3104 2050 90 and 3104 2090 00. Availability/presentation of which means that Anti-Dumping Duty will not be payable.","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AP, AS, AT, EA, EE, EL, EP, ES, JE, JP.
+Also insert the Issue Number of the
+Licence/authorisation.",
+D010,Import,Item,"Multi-combinational forms of DRAMs originating in countries other than the Republic of Korea, incorporating DRAM chips and/or mounted DRAMs originating in countries other than the Republic of Korea or originating in the Republic of Korea and manufactured by Samsung.
+The indication in box 44 of the Single Administrative Document of the reference number D010 shall, as such, be considered as sufficient evidence.","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the number of the commercial invoice(s) covering the goods.",
+D012,Import,Item,"DRAM containing products of KR origin other than from
+Samsung > = |10% <|20% of the value.
+The declarant shall submit a statement in conformity with the requirements of Article 1(4) and the Annex of Regulation (EC) No
+1480/2003  (OJ L 212, page 1), as amended by Regulation (EC) No 2116/2005  (OJ L 340, page 7).","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the name of the manufacturer shown on the Statement conforming to requirements of Art 1(4) and to the annex of  Regulation 1430/2003.",
+D013,Import,Item,"DRAM containing products of KR origin other than from
+Samsung > =_|20% < |30% of the value.
+The declarant shall submit a statement in conformity with the requirements of Article 1(4) and the Annex of Regulation (EC) No
+1480/2003  (OJ L 212, page 1), as amended by Regulation (EC) No 2116/2005  (OJ L 340, page 7)","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the name of the manufacturer shown on the Statement conforming to requirements of Art 1(4) of and to the annex of Regulation 1430/2003.",
+D014,Import,Item,"DRAM containing products of KR origin other than from
+Samsung > = |30% < |40% of the value.
+The declarant shall submit a statement in conformity with the requirements of Article 1(4) and the Annex of Regulation (EC) No
+1480/2003  (OJ L 212, page 1), as amended by Regulation (EC) No 2116/2005  (OJ L 340, page 7).","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the name of the manufacturer shown on the Statement conforming to requirements of Art 1(4) of and to the annex of Regulation 1430/2003.",
+D015,Import,Item,"DRAM containing products of KR origin other than from
+Samsung > = |40% < |50% of the value.
+The declarant shall submit a statement in conformity with the requirements of Article 1(4) and the Annex of Regulation (EC) No
+1480/2003  (OJ L 212, page 1), as amended by Regulation (EC) No 2116/2005  (OJ L 340, page 7).","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the name of the manufacturer shown on the Statement conforming to requirements of Art 1(4) of and to the annex of Regulation 1430/2003.",
+D017,Import,Item,"Commercial invoice within  the framework of undertakings and Export Undertaking Certificate issued by CCCME accompanying sales made subject to an Undertaking (Annex III of Regulation
+513/2013  as amended by Regulation 748/2013)  of 06/08/2013, exempting from provisional anti-dumping duty, imports of Solar Panels & Key Components, originating in the People’s Republic of China.","Use status codes AC.
+Also insert the invoice number(s) and serial number of each of the certificate(s).",
+D018,Import,Item,"Invoice from exporting  procedures subject to an undertaking, for transactions, that are not exempted from anti-dumping duties on solar Panels & Key Components (Annex IV of Regulation 513/2013  as amended by Regulation 748/2013).","Use status codes AC.
+Also insert the invoice number(s) and serial number of each of the certificate(s).",
+E017,Export,Item,Export certificates issued by the competent  authorities  of third countries,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AP, GE, LE, LP, UE.",
+I004,Import,Item,"Import surveillance document.
+1) Commission Regulation (EC) No 76/2002 of 17 January 2002 introducing prior Community surveillance of imports of certain iron and steel products covered by the ECSC and EC Treaties originating in certain third countries.
+
+Import (prior community surveillance) Document.
+1) Council Regulation (EC) No 519/94 of 7 March 1994 on common rules for imports from certain third countries and repealing Regulations (EEC) Nos. 1765/82, 1766/82 and 3420/83.
+
+2) Council Regulation (EC) No 3285/94 of 22 December 1994 on the common rules for imports and repealing Regulation (EC) No 518/94","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AP, EA, EE, EL, EP, ES, GE, LE, LP, UE, XB, XF, XU.
+
+
+
+
+GBAOG followed by licence number. If there is sequential range of reference numbers then enter the first and last numbered documents within the range. If there are several random reference numbers then ‘various’ is permitted.",
+L001,Import,Item,All CAP Import licences other than those specifically identified by other document codes,"With the exception of FP, HP and the U series, enter appropriate status code listed in document status codes for harmonised declarations.",
+L076,Import,Item,Import licences issues by BERR under Reg. (EC) 520/94 for certain non-textile goods – not currently in use.,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): EP, ES, EE, EA, EL.
+Enter the document reference. If there is sequential range of reference numbers then enter the first and last numbered documents within the range. If there are several random reference numbers then ‘various’ is permitted.",
+L079,Import,Item,"Import documents under:
+1) Council Regulation (EC) No 517/94 of 7 March 1994 on common rules for imports of textile products from certain third countries not covered by bilateral agreements, protocols or other arrangements, or by other specific Community import rules; and
+2) Council Regulation (EEC) No 3030/93 of 12 October 1993 on common rules for imports of certain textile products from third countries","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AP, EA, EE, EL, EP, ES, GE, LE, LP, UE, XF, XU, XW, XX.
+
+GBTEX followed by licence number. If there is sequential range of reference numbers then enter the first and last numbered documents within the range. If there are several random reference numbers then ‘various’ is permitted.",
+L081,Import,Item,"Certificate of analysis (Reg. 2377/02, L 358) for malting barley from third countries","With the exception of FP, HP, the U series and XA, enter appropriate status code listed in document status codes for harmonised declarations.",
+L082,Import,Item,"Certificate of conformity (Reg. 2377/02, L 358) for malting barley from third countries","With the exception of FP, HP, the U series and XA, enter appropriate status code listed in document status codes for harmonised declarations.",
+L085,Import,Item,Transport document as mentioned  in Reg. (EC) 196/97 (OJ L31) concerning imports into the Community of rice originating in and coming from Egypt,"With the exception of FP, HP, the U series and XA, enter appropriate status code listed in document status codes for harmonised declarations.",
+L100,Import,Item,"Ozone Depleting Substances Import licence: Regulation (EC) No.
+2037/2000  of the European Parliament and of the Council of 29
+June 2000 on substances that deplete the ozone layer","Enter one of the following 3 digit licence identifers as shown below:
+LIC, LIP, LPD, LPR, ESU, EIP, EHS, EPS, EPD. Followed by the unique licence number.
+Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AF, AG, AT, IE, IP, IS, LE, LP, XX.",
+L106,Import,Item,"Licence of conformity of hemp in accordance with article 5 of
+Regulation No 1673/2000 (OJ L 193/16).","With the exception of FP, HP, the U series and XA, enter appropriate status code listed in document status codes for harmonised declarations.",
+L113,Import,Item,"Import Licence. 2002/602/ECSC: Commission Decision of 8 July
+2002 on administering certain restrictions on imports of certain steel products from the Russian Federation","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AP, EA, EE, EL, EP, ES, UE, XW
+GBAOG followed by licence number. If there is sequential range of reference numbers then enter the first and last numbered documents within the range. If there are several random reference numbers then ‘various’ is permitted.",
+L114,Import,Item,Import authorisation.  Commission Decision No 1469/2002/ECSC of 8 July 2002 on administering certain restrictions on imports of certain steel products from Kazakhstan,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AP, EA, EE, EL, EP, ES, UE, XW
+GBAOG followed by licence number. If there is sequential range of reference numbers then enter the first and last numbered documents within the range. If there are several random reference numbers then ‘various’ is permitted.",
+L116,Import,Item,Kimberley Process Diamond Certificate,"Only status codes AF is permitted (see
+document status codes for harmonised declarations for definitions).",
+L119,Import,Item,"Import Licence. 2002/1001/EC: Council Decision of 19 December
+2002 on trade in certain steel products between the European
+Community and Ukraine
+
+Import authorisation (893/2003/EC - OJ L 333) on trade in certain steel products between the European Community and Ukraine","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AP, EA, EE, EL, EP, ES, UE, XW 
+
+GBAOG followed by licence number. If there is sequential range of reference numbers then enter the first and last numbered documents within the range. If there are several random reference numbers then ‘various’ is permitted.",
+L125,Import,Item,"Import licence Commission Regulation (EC) No 35/97 of 10
+January 1997 laying down provisions on the certification of pelts and goods covered by Council Regulation (EEC) No 3254/91","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, XX.",
+N002,Both,Item,"Certificate of conformity (Fruit & Vegetables)
+1)Commission Regulation (EC) No 2019/94 of 2 August 1994 on imports of residues from the manufacture of starch from maize from the United States of America
+2) Commission Regulation (EC) No 1148/2001  of 12 June 2001 on checks on conformity to the marketing standards applicable to fresh fruit and vegetables
+If using the CHED-PP to pre notify an import consignment that requires HMI checks under Specific Marketing Standards (SMS) or General Marketing Standards (GMS), the licence reference for doc code N002 should be completed with licence type CVD and the CHED-PP reference number.","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AG, AS, JE, JS, XA or XX.
+For CHED-PP: 
+GBCVD followed by CHED-PP reference number.",
+N018,Both,Item,ATR certificate,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.
+When this document is used at export then where the certificates used are in a numbered range enter only the lowest numbered and highest numbered certificates in the range otherwise
+‘various’ is permitted.",
+N705,Import,Item,Bill of Lading,"Use one of the following status codes as appropriate (see Appendix C10) AE,AF,AG,AP,AS,AT,GE,JE,JP,LE,LP,UA,UE,UP,US,XA,XB",
+N710,Both,Item,"(T1) Maritime manifest
+Sea Simplified procedure","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AS, AT, GE, GP, JA, JE, JS.",
+N720,Both,Item,(T1) Consignment note CIM Rail Simplified procedure,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AS, AT, GE, GP, JA, JE, JS.",
+N740,Both,Item,"(T1) Air manifest
+Air Simplified procedure","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AS, AT, GE, GP, JA, JE, JS.",
+N750,Both,Item,Movement by post including parcel post,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AS, AT, GE, GP, JA, JE, JS.",
+N821,Both,Item,(T1) External Community transit declaration / common transit,"The Movement Reference Number (MRN) for the Common/Community transit movement.
+Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AS, AT, GE, GP, JA, JE, JS.",
+N822,Both,Item,(T2) Internal Community transit declaration / Common transit,"The Movement Reference Number (MRN) for the Common/Community transit movement.
+Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AS, AT, GE, GP, JA, JE, JP, JS.",
+N823,Both,Item,T5 control copy,"T5 Reference number.
+Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AP, AS, AT, GE, GP, JA, JE, JS.",
+N825,Both,Item,T2L document,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AS, AT, GE, GP, JA, JE, JS.",
+N851,Import,Item,"Phytosanitary certificate. Council Directive 2000/29/EC of 8 May
+2000 on protective measures against the introduction  into the Community of organisms harmful to plants or plant products and against their spread within the Community","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AG, AS, EE, ES, IE, IS, JE, JS or XX.",
+N852,Import,Item,"Common Health Entry Document for Feed and Food of Non-Animal Origin (CHED-D) Part 2, Section D of Annex II to Commission Implementing Regulation (EU) 2019/1715 (OJ L 261)) imposes special conditions on the import of certain foodstuffs from certain non-EU countries due to contamination risk by aflatoxins.
+",AG,
+N853,Import,Item,"Common Health Entry Document for Products (CHED-P) Part 2, Section B of Annex II to Commission Implementing Regulation (EU) 2019/1715 (OJ L 261)) laying down procedures for vet checks at Community BIPs on products imported from third countries ","Use either status code AE, JA, JE, LE, LP or XX as appropriate (see document status codes for harmonised declarations for definitions).",
+N861,Import,Item,Universal certificate of origin,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where more than one certificate covers the goods insert the highest and lowest serial numbers of the certificates (if they fall within a sequentially numbered range). Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+N864,Both,Item,Invoice declaration or origin declaration made out by any exporter on the invoice or any other commercial document (excluding the Bill of Lading) for originating goods where the total value exceeds €6000,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the document",
+N865,Both,Item,Certificate of origin “Form A ”,Also insert the serial number of the document,
+N934,Import,Item,"Declaration of particulars relating to Valuation Method 1.
+In the UK Forms C105A and C109A support Valuation Method 1. C109A forms are registered with HMRC and a GVS reference allocated.
+
+Status Code                                  Meaning                                 
+EP                                                     C109A registered with Customs  (GVS
+                                                          reference)
+JE                                                      Valuation declaration may be required
+                                                          (currently for use by CFSP Traders) 
+AE                                                    C105A attached
+XF                                                    C105A will be produced on removal from 
+                                                         warehouse.
+XU                                                   C105A to be produced (Bulk commodities  
+                                                         provisionally invoiced)
+","The format of a GVS reference is nnnannnnnn
+a – ‘A’ for a C109A
+n – a digit
+
+There is no formal reference for a C105A. Declarant has the option to enter a reference.",
+N935,Import,Item,The invoice on the basis of which the customs value of the goods is declared,"Only status codes AC is permitted (see
+document status codes for harmonised declarations for definitions).",
+N952,Both,Item,TIR Carnet,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AS, AT, GE, GP, JA, JE, JS.",
+N954,Both,Item,"Movement certificate EUR.1
+See also:
+Y019 where the document shows that the goods originate in
+Iceland;
+Y020 where the document shows that the goods originate in
+Norway; and
+Y021 where the document shows that goods originate in the EEA.","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.
+When this document is used at export then where the certificates used are in a numbered range enter only the lowest numbered and highest numbered certificates in the range otherwise
+‘various’ is permitted.",
+N955,Both,Item,ATA carnet,"Use status code AC (see document status codes for harmonised declarations for definition), also insert the Carnet number.",
+N990,Both,Item,"Authorisation to use a Customs procedure with economic impact/
+end-use.
+This document code is used for declaring the following Customs procedures:
+AS Aircraft Spare Parts Depots
+EU End Use Relief
+PC PCC (Processing under Customs Control relief)
+TA (Temporary Admission)
+See also:
+C019 for declaring OP 
+C601 for declaring IP 
+Y009 for declaring OT","Reference: Scheme authorisation reference as defined under Box 44
+CUSTOMS SCHEMES.
+Faxed copy not acceptable.
+
+Note: No status code (as contained in
+document status codes for harmonised declarations) is required.",
+N991,Both,Item,"Declaration of preferential origin, issued under the provisions of the EU-South Korea Free Trade Agreement, on an invoice, packing list, consignment note or other commercial document, bearing as appropriate an original signature or approval number of the exporter","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the invoice, packing list, consignment note or other commercial document number(s)",
+U003,Import,Item,"Certificate of origin meeting the conditions laid-down in article
+47 of Regulation (EEC) No 2454/93","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where more than one certificate covers the goods insert the highest and lowest serial numbers of the certificates (if they fall within a sequentially numbered range). Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U004,Import,Item,"Certificate of (for certain agricultural products) origin meeting the conditions laid down in article 55 of Regulation (EEC) No
+2454/93 to support claims to first come, first served tariff quotas or to accompany imports under licence based quotas or other special arrangements.","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where more than one certificate covers the goods insert the highest and lowest serial numbers of the certificates (if they fall within a sequentially numbered range). Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U005,Import,Item,Certificate of designation of origin issued by the competent authorities  for certain agricultural products originating in Morocco,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AP, GE, LE, LP, UE.",
+U014,Import,Item,Certificate of origin Form A bearing the endorsement “Derogation-Regulation (EC) No 1613/2000” as regards the rules of origin for textiles from Laos,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U015,Import,Item,Certificate of origin Form A bearing the endorsement “Derogation-Regulation (EC) 1614/2000” as regards the rules of origin for textiles from Cambodia,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U016,Import,Item,Certificate of origin Form A bearing the endorsement “Derogation-Regulation (EC) No 1615/2000” as regards the rules of origin for textiles from Nepal,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U019,Import,Item,"Certificate EUR.1 bearing the endorsement: “Specific origin rule laid down in Decision No 2/2000 of EC-Mexico Joint Council Annex III Appendix IIa Note 12 1”, to support a claim to Tariff quota on certain motor vehicles of headings 8701, 8702 and
+8704 originating in Mexico.","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U021,Import,Item,Certificate EUR.1 bearing the endorsement “DEROGATION - DECISION 1/2001” as regards the rules of origin for polyester cotton yarn from Zambia,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U022,Import,Item,Certificate EUR.1 bearing the endorsement “DEROGATION- DECISION Nr 2/2001”  as regards the rules of origin for certain articles of apparel from Fiji,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U024,Import,Item,Certificate EUR.1 bearing the endorsement “DEROGATION- DECISION Nr 3/2001”  as regards the rules of origin for core spun yarns from Swaziland,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U026,Import,Item,Certificate EUR 1. bearing the endorsement “DEROGATION- DECISION Nr 657/2001” as regards the rules of origin for frozen fillets of certain fish from St. Pierre and Miquelon,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document
+code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U028,Import,Item,"Certificate of origin Form A bearing the endorsement “Quota - Regulation (EC) No. 1401/2002”;  the date of loading of the rice in the exporting beneficiary country, and the marketing year in respect of which delivery is being made, the CN code 1006","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.",
+U030,Import,Item,"Certificate of Origin Form A with Statement - “ILO Conventions No 29, 87, 98, 100, 105, 111, 138 and 182 - Title III of Regulation (EC) No 2501/01” entered in box 4","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U031,Import,Item,Certificate EUR 1 bearing the endorsement “DEROGATION- DECISION Nr 2001/936/EC” as regards the rules of origin for prepared and preserved shrimps and prawns from Greenland (notified under document number C(2001) 4648),"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U034,Import,Item,Certificate EUR.1 bearing the endorsement “DEROGATION- DECISION No 2/2002”  as regards the rules of origin for preserved tuna and tuna loins from the ACP States,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U035,Import,Item,Certificate EUR.1 bearing the endorsement “DEROGATION- DECISION No 2003/673” as regards the rules of origin for lobsters in pieces from Saint Pierre and Miquelon,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document
+code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U036,Import,Item,"Certificate EUR.1 (Regulation (EC) No 1964/2003) imposing provisional safeguard measures against imports of certain prepared or preserved citrus fruits (namely mandarins, etc.)","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.",
+U037,Import,Item,"Certificate of origin Form A (Regulation (EC) No 1964/2003) imposing provisional safeguard measures against imports of certain prepared or preserved citrus fruits (namely mandarins, etc.)","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.",
+U038,Import,Item,"Proof of origin covering imports of sheep meat from ACP countries under a Community Tariff quota which contains in the box concerning the description of the products, the following statement: “sheep product/s  from the species domestic sheep”","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U039,Import,Item,"Proof of origin covering imports of sheep meat from ACP countries under a Community Tariff Quota which contains in the box concerning the description of the products, the following statement: “from the species other than domestic sheep”","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document
+code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U040,Import,Item,"Proof (certificate)  of origin established in accordance with Article 47 of Regulation (EEC) No 2454/93, for imports of sheep meat under Tariff Quotas from Argentina, Australia, Greenland, New Zealand and Uruguay (or from other countries for which a Form EUR1 cannot be issued) which includes the following additional information:
+—    the CN code,
+—    the order number or order numbers of the tariff quota concerned in accordance with the Article 6(2) third subparagraph of Regulation (EC) No 2233/03,
+—    the total net weight per coefficient category as specified in
+Article 3 (2) of Regulation (EC) No 2233/03","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U041,Import,Item,Certificate EUR.1 bearing the endorsement “Derogation-Decision No 1/2005” or “Derrogaca o-Decisao No 1/2005” (CV) as regards certain garments from Cape Verde,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U042,Import,Item,Certificate EUR.1 bearing the endorsement “Derogation-Decision No 2/2005” or “Derogation - Decision No 2/2005 as regards the rules of origin for preserved tuna and tuna loins from the ACP States,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U043,Import,Item,"Certificate EUR.1 bearing the endorsement “Derogation - Commission Decision 2005/578/EC” or “Derogation - Decision
+2005/578/CE de la Commission” “ as regards the origin rules for fresh and frozen scallops from St Pierre and Miquelon","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U045,Both,Item,"Movement Certificate EUR-MED
+See also:
+Y019 where the declaration shows that the goods originate in
+Iceland;
+Y020 where the declaration shows that the goods originate in
+Norway; and
+Y021 where the document shows that goods originate in the EEA.","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U046,Import,Item,Certificate EUR.1 bearing the endorsement “DEROGATION- DECISION Nr 3/2005” as regards the origin rules for core spun yarns from Swaziland.,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U048,Both,Item,"EUR-MED declaration of preferential origin on an invoice or other commercial document bearing as appropriate an original signature or approval number of the exporter in a Pan-Euro- Mediterranean Country
+See also:
+Y019 where the declaration shows that the goods originate in
+Iceland;
+Y020 where the declaration shows that the goods originate in
+Norway; and
+Y021 where the document shows that goods originate in the EEA.","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the invoice number(s).",
+U050,Import,Item,Certificate EUR. 1 bearing the endorsement “DEROGATION- DECISION No 2007/767/EC” as regards derogations from the rules of origin for certain fishery products from the Falkland Islands (notified under document number C (2007) 5393).,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned",
+U051,Import,Item,Certificate EUR. 1 bearing the endorsement “DEROGATION- DECISION C(2008) 3568” as regards derogations from the rules of origin for preserved tuna and tuna loins from Mauritius,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned",
+U052,Import,Item,"Certificates of Origin Form A bearing the endorsement “DEROGATION-REGULATION  (EC) No. 815/2008” as regards derogations from the rules of origin for prepared or preserved mackerel, frigate tuna and frigate mackerel and tuna within Heading 1604 from Cape Verde.","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned, i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of
+each certificate concerned",
+U053,Import,Item,Certificates EUR1 bearing the endorsement “DEROGATION- REGULATION 2008/691/EC” as regards derogations from the rules of origin for certain fishery products from the Seychelles and dependencies.,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to highest serial numbers of the certificates concerned, i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned",
+U054,Import,Item,Certificate EUR.1 bearing the endorsement “DEROGATION- DECISION No 751/2008” as regards derogations from the rules of origin for preserved tuna and tuna loins from Madagascar,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to highest serial numbers of the certificates concerned, i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned",
+U055,Import,Item,Certificate EUR.1 bearing the endorsement “DEROGATION- DECISION No 2008/820/EC” as regards derogations from the rules of origin for core spun yarn from Swaziland,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to highest serial numbers of the certificates concerned, i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned",
+U057,Import,Item,Certificate EUR.1 bearing the endorsement “DEROGATION- DECISION No 2011/47/EU” as regards derogations from the rules of origin for sugar and sugar products from the Netherlands Antilles,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U058,Import,Item,"Certificate EUR.1 bearing the endorsement “DEROGATION- DECISION No 2011/122/EU” as regards derogations from the rules of origin for the following fishery products exported from St Pierre and Miquelon - Frozen lobster (Homarus americanus), whole, cooked. Frozen lobster (Homarus americanus), in pieces, cooked or fresh. Frozen lobster meat (Homarus americanus), cooked or fresh. Prepared meals of lobster meat (Homarus americanus), including meals ready for consumption. Smoked fillets of herrings (Clupea harengus) or mackerel (Scomber
+scrombrus). Prepared or preserved herrings (Clupea harengus) or mackerel (Scomber scombrus). Frozen mussels (Mytilus edulis) cooked, whether in shell or not. Prepared or preserved mussels (Mytilus edulis, and meals containing mussels (Mytilus edulis), including meals ready for consumption.","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U059,Import,Item,"Preferential  Origin Declaration containing the statement “DEROGATION-ANNEX II(a) OF THE PROCOTOL CONCERNING THE DEFINITION OF ORIGINATION  PRODUCTS AND METHODS OF ADMINISTRATIVE COOPERATION” as regards derogations from the rules of origin for certain fish, biscuit, tobacco and textile products from South Korea","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the invoice or other commercial document containing the origin declaration",
+U060,Import,Item,Certificate EUR.1 bearing the endorsement “DEROGATION- DECISION No 2011/861/EU” as regards derogations from the rules of origin for tuna loins from Kenya,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to highest serial numbers of the certificates concerned, i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned",
+U061,Import,Item,"Certificate EUR 1 bearing the endorsement ""Derogation - Commission Implementing Decision 2015/1204"" ","Use one of the following status codes (see Document status codes for harmonised declarations for definitions): AE,AF,AG,AP,AS,AT,GE,GP,LE,LP,UA,UE,UP,US,XA.  Also insert the serial number of the 
+ certificate.  Where more than one certificate covers the goods insert the highest & lowest serial numbers of the certificates (if sequential). If not  sequential insert the serial number of each certificate.",
+U062,Import,Item,Origin quota and alternatives to the product specific rules of origin in Annex V of CETA,"Reference must be made to Annex 5-A of the CETA agreement
+
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to highest serial numbers of the certificates concerned, for example, document code +0054037-0062047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U064,Import,Item,Certificate EUR.1 bearing the endorsement “DEROGATION- DECISION No 2012/213/EU” as regards derogations from the rules of origin for peach and/or pear in fruit jelly or mixture of peach and/or pear and/or pineapple in fruit juice from Swaziland,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to highest serial numbers of the certificates concerned, i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned",
+U065,Import,Item,"Certificate of Origin Form A bearing in Box 4 the endorsement “Autonomous  measure – Regulation (EU) No 1029/2012” issued by the authorities in Pakistan for certain products originating in that country which benefit in the period from 15 November
+2012 to 31 December 2013 from special autonomous tariff preferences in the form of nil rates of customs duty","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where more than one certificate covers the goods insert the highest and lowest serial numbers of the certificates (if they fall within a sequentially numbered range). Where certificates are not sequentially numbered insert the serial number of each certificate concerned",
+U067,Import,Item,Certificate EUR.1 bearing the endorsement “Derogation- Decision No 1/2012 of the ESA-EU Customs Cooperation Committee of 29/11/2012”,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA. Also insert the serial number of the certificate. Where more than one certificate covers the goods insert the highest & lowest serial numbers of the certificates (if sequential). If not sequential insert the serial number of each certificate.",
+U068,Import,Item,Proof of origin containing the following statement  in English: “Product originating in accordance with Appendix 5 of Annex II”,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA. Also insert the serial number of the certificate. Where more than one certificate covers the goods insert the highest & lowest serial numbers of the certificates (if sequential). If not sequential insert the serial number of each certificate.",
+U069,Import,Item,Proof of origin containing the following statement  in English: “Product originating in accordance with Appendix 5 of Annex II”,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA. Also insert the serial number of the certificate. Where more than one certificate covers the goods insert the highest & lowest serial numbers of the certificates (if sequential). If not sequential insert the serial number of each certificate.",
+U070,Import,Item,Certificate EUR 1. bearing the endorsement ‘Derogation- Decision No 1/2013 of the ESA-EU Customs Cooperation Committee of 7 August 2013’,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA. Also insert the serial number of the certificate. Where more than one certificate covers the goods insert the highest & lowest serial numbers of the certificates (if sequential). If not sequential insert the serial number of each certificate.",
+U071,Import,Item,"Proof of origin containing the following statement: “Product originating in accordance with Appendix 2A of Annex II (Concerning the Definition  of the Concept of “Originating Products” and Methods of Administrative Cooperation)” (OJ L
+346, 15.12.2012)","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB. Also insert the serial number of the certificate. Where more than one certificate covers the goods insert the highest & lowest serial numbers of the certificates (if sequential). If not sequential insert the serial number of each certificate.",
+U072,Import,Item,Certificate EUR.1 bearing the endorsement ‘Derogation Regulation (EU) 2017/967’,"Use one of the following status codes (see Appendix C10 for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to highest serial numbers of the certificates concerned, i.e. document code +0054037-0062047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U090,Both,Item,"Form EUR1 issued in Switzerland, under the provisions of the EC-Switzerland Free Trade Agreement, declaring that the products concerned have originated  in the European Community in accordance with preferential rules of origin (i.e. for EC originating products which were exported under preference to Switzerland and which are now being returned in the same state to the Community)","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U091,Both,Item,"Invoice declaration issued under the provisions of the EC- Switzerland Free Trade Agreement, declaring that the products concerned have originated  in the European Community in accordance with preferential rules of origin (i.e. for EC originating products which were exported under preference to Switzerland and which are now being returned in the same state to the Community)","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB. Also insert the invoice number(s)",
+U092,Import,Item,"Certificate of Origin Form A bearing the endorsement “DEROGATION-DECISION No 2012/1044/EC” as regards derogations for Guatemala from the rules of origin for Cooked, frozen and vacuum packed tuna fillets known as ‘loins’","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where more than one certificate covers the goods insert the highest and lowest serial numbers of the certificates (if they fall within a sequentially numbered range). Where certificates are not sequentially numbered insert the serial number of each certificate concerned",
+U093,Import,Item,"Certificate of Origin Form A bearing the endorsement “DEROGATION-DECISION No 2012/1045/EC” as regards derogations for El Salvador from the rules of origin for Cooked, frozen and vacuum packed tuna fillets known as ‘loins’","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where more than one certificate covers the goods insert the highest and lowest serial numbers of the certificates (if they fall within a sequentially numbered range). Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U094,Import,Item,"Certificate of Origin Form A bearing the endorsement “Derogation-Implementing Decision 2013/243/EU” as regards derogations for Switzerland from the rules of origin for peaches, pears and pineapples","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA.
+Also insert the serial number of the Certificate. Where more than one certificate covers the goods insert the highest and lowest serial numbers of the certificates (if they fall within a sequentially numbered range). Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U095,Import,Item,"Box 4 of certificates of origin Form A issued by the competent authorities of Cambodia shall bear the following endorsements:
+‘Derogation—Commission Implementing Regulation (EU) No 348/2018’","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA.
+Also insert the serial number of the Certificate. Where more than one certificate covers the goods insert the highest and lowest serial numbers of the certificates (if sequential). If not sequential insert the serial number of each certificate.",
+U098,Import,Item,"Declaration of Origin 
+Seller: [insert full name and address of the seller of the preperations and/or mixtures containing acesulfame potassium]
+
+Number and date of commercial invoice:
+Packing No – 1
+Product description of the preparation and/or mixture containing acesulfame potassium - 2
+Quantity in kg of the acesulfame potassium contained in the product - 3
+County of origin of the acesulfame potassium - 4
+ 
+Producer: [insert full name and address of the final producer of the preparations and/or mixtures containing acesulfame potassium if the producer is not identical to the seller]
+
+The producer of these goods hereby declares:
+
+- That the origin declared in column 4 for the goods described in column 2 of this declaration has been determined by it in accordance with the provisions of Articles 23 and 24 of Council Regulation (EEC) No. 2913/92 (Community Customs Code).
+- Its willingness to cooperate fully with the Commission of the European Union, or the customs authorities of the importing Member States when verifying the accuracy of this declaration.","Use one of the following status codes
+Seller: [insert full name and address of the seller of the (see document status codes for harmonised declarations for definition for definitions): preparations and/or mixtures containing acesulfame potassium] AE,AF,AG,AP,AS,AT,GE,GP,LE,LP, UA,UE,UP,US,XA. 
+
+Also insert the serial number of the certificate.
+
+Where more than one certificate covers the goods insert the highest & lowest serial numbers of the certificates (if sequential). If not sequential insert the serial number of each certificate
+",
+U099,Import,Item,Certificate EUR.1 bearing the endorsement ‘Derogation Regulation (EU) 2017/882’.,"Use one of the following status codes (see Appendix C10 for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to highest serial numbers of the certificates concerned, i.e. document code +0054037-0062047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+U110,Both,Both,"Preference based on a statement on origin for single shipment 
+","This code must be declared with one of these status codes AE, AF, AG, AP, AS, AT, GE, GP, HP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB and the commercial document reference number.",
+U111,Both,Both,Preference based on statement on origin for multiple shipments of identical products ,"This codes must be declared with one of these status codes AE, AF, AG, AP, AS, AT, GE, GP, HP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB and the commercial document reference number.",
+U112,Both,Both,Preference based on importers knowledge ,This code must be declared with status code JP,
+U113,Both,Both,Statement on origin made out by a Registered Exporter in the framework of OAD for a total value of originating products consigned not exceeding 10000 Euros,"This code must be declared with one of these status codes AE, AF, AG, AP, AS, AT, GE, GP, HP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB and the commercial document reference number. ",
+U114,Both,Both,Statement on Origin made out by a Registered Exporter in the framework of OAD for a total value of originating products consigned exceeding 10000 Euros.,"This code must be declared with one of these status codes AE, AF, AG, AP, AS, AT, GE, GP, HP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB and the commercial document reference number.",
+U115,Both,Both,Statement on origin made out by a Non-Registered Exporter in the framework of OAD for a total value of originating products consigned not exceeding 10000 Euros.,"This code must be declared with one of these status codes AE, AF, AG, AP, AS, AT, GE, GP, HP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB and the commercial document reference number.",
+U162,Both,Item,Invoice declaration or origin declaration made out by an exporter on the invoice or any other commercial document (excluding the Bill of Lading) for originating goods where the total value is less than €6000.,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the document.  ",
+U164,Both,Item,Statement of origin made out by a Registered Exporter in the framework of GSP for a total value of originating products consigned not exceeding €6000.,"Use one of the following status codes (see Appendix C10 for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB 
+
+These codes are only applicable for countries of origin that are covered by the GSP and within the EU (for the purposes of bi-lateral cumulation and split consignments)
+
+To facilitate any software changes that may result from these amendments the status codes currently listed (RE/XO as appropriate) will remain valid on CHIEF against these documents until 1 February 2020.
+",
+U165,Both,Item,"Statement of origin made out by a Registered Exporter in the framework of GSP for a total value of originating products consigned exceeding €6000.  
+When declaring U165 an additional document code, C100, must also be declared in Box 44.  The REX number must be entered in the following format consisting of a maximum of 35 alphanumeric characters:
+- the 2-digit alpha code of the REX beneficiary country
+- REX
+- up to 30 characters 
+For example, INREX123456789.","Use one of the following status codes (see Appendix C10 for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB 
+
+These codes are only applicable for countries of origin that are covered by the GSP and within the EU (for the purposes of bi-lateral cumulation and split consignments)
+
+To facilitate any software changes that may result from these amendments the status codes currently listed (RE/XO as appropriate) will remain valid on CHIEF against these documents until 1 February 2020.
+",
+U166,Both,Item,Statement of origin made out by a non-registered Exporter in the framework of GSP for a total value of originating products consigned not exceeding €6000.,"Use one of the following status codes (see Appendix C10 for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB 
+
+These codes are only applicable for countries of origin that are covered by the GSP and within the EU (for the purposes of bi-lateral cumulation and split consignments)
+
+To facilitate any software changes that may result from these amendments the status codes currently listed (RE/XO as appropriate) will remain valid on CHIEF against these documents until 1 February 2020.
+",
+U167,Both,Item,Replacement statement of origin made out by a non-registered EU re-consignor in the framework of GSP for a total value of originating products consigned exceeding €6000.,"Use one of the following status codes (see Appendix C10 for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB 
+
+These codes are only applicable for countries of origin that are covered by the GSP and within the EU (for the purposes of bi-lateral cumulation and split consignments)
+
+To facilitate any software changes that may result from these amendments the status codes currently listed (RE/XO as appropriate) will remain valid on CHIEF against these documents until 1 February 2020.
+",
+U176,Import,Item,"EUR1 movement certificate bearing the endorsement
+""Derogation — Decision No 2/2017 of the ESA-EU Customs Cooperation Committee of 2 October 2017"" or
+""Dérogation — Décision no 2/2017 du comité de coopération douanière AfOA-UE du 2 octobre 2017""
+Snoek (barracouta), salted
+","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the certificate. Where more than one certificate covers the goods insert the highest and lowest serial numbers of the certificates (if they fall within a sequentially numbered range). Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+X001,Export,Item,All Export licences other than those specifically identified by another code.,"With the exception of FP, HP and the U series, enter appropriate status code listed in document status codes for harmonised declarations.
+For supplementary declarations use EA, IA, JA, UA and XA as appropriate (see document status codes for harmonised declarations for definitions).",
+X002,Export,Item,"Standard Individual Export Licence: dual use goods requiring export authorisation Council Regulation (EC) No 1334/2000  of 22 June 2000
+Open Individual Export Licence: dual use goods requiring export authorisation (D999)
+European Union General Export Authorisation (GEA): Dual Use items & technology
+EU001-exports to Australia, Canada, Japan, New Zealand, Norway, Switzerland (including Liechtenstein) and the United States
+EU002-export of certain dual-use items to certain destinations
+EU003-export after repair/replacement
+EU004-temporary export for exhibition or fair
+EU005-telecommunications
+EU006-chemicals
+Open General Export Licence: Dual Use goods","With the exception of AG, AS, EL, IE, IS, JE, JS, UE, UP, US, XB, XF, XU, enter appropriate status code listed in document status codes for harmonised declarations.
+
+For supplementary declarations use EA, IA, JA or UA as appropriate (see document status codes for harmonised declarations for definitions).",
+X003,Export,Item,Ozone Depleting Substances Export Authorisation Number: Regulation (EC) No 2037/2000  of the European Parliament and of the Council of 29 June 2000 on substances that deplete the ozone layer.,"Enter the following 3 digit licence identifers as shown below:
+EOD
+Followed by the Export Authorisation
+Number.
+Use either status code AG or IE as appropriate (see document status codes for harmonised declarations for definitions).",
+X006,Export,Item,CITES Export permit concerning the implementation of Council Regulation (EC) No 338/97 on the protection of species of wild fauna and flora by regulating trade therein,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AP, AS, AT, XX.",
+X018,Export,Item,"UK Standard Individual Export Licence issued by UK licencing authority (MLA) or : (Council  Regulation (EEC) No 3911/92)
+EU Standard Individual Export Licence issued in another
+Member State (Council Regulation (EEC) No 3911/92)","With the exception of EA, EE, EL, EP, ES, FP, IA, IE, IP, LE, SP, XA, XB, XU, enter appropriate status code listed in document status codes for harmonised declarations.",
+Y001,Import,Item,"Certificate of Origin to support a claim to tariff quota on olive oil imported from Lebanon, declaring that the oil originated in and was transported direct from that country","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+Y003,Import,Item,"Designation of Origin Certificate to support a claim to tariff quota on other sparkling wine and other wine of fresh grapes imported from Tunisia, declaring that the wine originated in and was transported direct from that country","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+Y008,Import,Item,Transported directly from Turkey to the Community,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AP, GE, LE, LP, UE.",
+Y009,Both,Item,"Prior authorisation.  Council Regulation (EC) No 3036/94 of 8
+December 1994 establishing economic outward processing arrangements applicable to certain textiles and clothing products re-imported into the Community after working or processing in certain third countries
+This document code is used when declaring Customs procedure
+OT
+See also:
+N990 for declaring AS, EU, PC or TA
+C019 for declaring OP
+C601 for declaring IP","Reference: OT authorisation reference as defined under Box 44 CUSTOMS SCHEMES.
+
+Note: No status code (as contained in
+document status codes for harmonised declarations) is required.",
+Y017,Import,Item,Wholly obtained in Jordan and transported directly from that country to the Community.,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AP, GE, LE, LP, UE.",
+Y019,Both,Item,"Proof of Preferential  Origin (Form EUR1, EUR-MED or declaration of preferential origin on an invoice or other commercial document) declaring that the goods originate in Iceland. Document code Y019 must be used to support a claim to a preferential rate of duty where the proof shows the country of origin as Iceland","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned",
+Y020,Both,Item,"Proof of Preferential  Origin (Form EUR1, EUR-MED or declaration of preferential origin on an invoice or other commercial document) declaring that the goods originate in Norway. Document code Y020 must be used to support a claim to a preferential rate of duty where the proof shows the country of origin as Norway","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned",
+Y021,Both,Item,"Proof of Preferential  Origin (Form EUR1, EUR-MED or declaration of preferential origin on an invoice or other commercial document) declaring that the goods originate in the EEA-European Economic Area. Document code Y021 must be used to support a claim to a preferential rate of duty where the proof shows country or origin as EEA (rather than Norway, Iceland or Liechtenstein).","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where a sequentially numbered range of certificates cover the goods insert the lowest to the highest serial numbers of the certificates concerned i.e. document code + 0054037-0054047: status code. Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+Y035,Import,Item,"Multi-component integrated circuits (MCOs) according to Annex I, Part 1, section II, letter G of Regulation (EEC) No 2658/87.",,
+Y040,Import,Header,UK established and VAT registered importer.,"VAT identification number issued in the Member State of importation  for the importer designated or recognised under Article 201(1) of the VAT Directive as liable for payment of VAT. Used for an importer that is established and VAT registered in the UK, it cannot
+be used by a non VAT registered person.",
+Y041,Import,Header,VAT registered customer in EU state of final destination.,"VAT identification number of the customer who is liable for the VAT on the intra-Community acquisition of goods in accordance with Article 200(1) of the VAT Directive.
+Used for the customer in the Member State for which the goods are bound; it cannot be used by a non VAT registered person.",
+Y042,Import,Header,UK established and VAT registered agent appointed to act as importer.,"VAT identification number of the UK VAT registered/established agent appointed to act as importer by a trader who is not established and VAT registered in the UK. The appointed agent/importer will be treated as importing and supplying the goods as the principal (see Public Notice 702, section 2.7 for the UK agent tax responsibilities); it cannot be used by a non VAT registered person.",
+Y059,Import,Item,"Preparations or mixtures not containing acesulfame potassium [potassium salt of 6-methyl-1,2,3-oxathiazin-4(3H)-one 2,2-dioxide;CAS RN 55589-62-3)",,
+Y060,Import,Item,"Preparations or mixtures not containing acesulfame potassium [potassium salt of 6-methyl-1,2,3-oxathiazin-4(3H)-one 2,2-dioxide;CAS RN 55589-62-3) with the same origin as the preparations or mixtures themselves",,
+Y061,Import,Item,Origin quota & alternatives to the product specific rules of origin in Annex V of CETA.,"Reference must be made to Annex 5-A of the CETA agreement. Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA, XB.
+Also insert the serial number of the Certificate. Where more than one certificate covers the goods insert the highest and lowest serial numbers of the certificates (if they fall within a sequentially numbered range). Where certificates are not sequentially numbered insert the serial number of each certificate concerned.",
+Y915,Export,Item,Reference Identification Number issued by the European Commission confirming that the necessary permission has been given for the export of chemical substances and preparations in accordance with Regulation (EC) No 689/2008  on the export and import of dangerous chemicals.,"Use of one of the following status codes
+(see document status codes for harmonised declarations for definitions) IP, UP, XA, XB, XX.
+Enter the Reference Identification Number issued by the European Commission.",
+Y927,Both,Item,"Code for fish and fish products excluded from the IUU catch certificate requirement.
+Commission Regulation (EC) No 1010/2009  laying down detailed rules for the implementation of Council Regulation (EC) No 1005/2008  establishing a Community system to prevent, deter and eliminate illegal, unreported and unregulated fishing.
+
+Commission Regulation (EU) No 86/2010 amending Council
+Regulation No 1005/2008  and Commission Regulation (EC) No
+1010/2009.","Use status code XX (see document status codes for harmonised declarations for definitions). This document code is to be used for fish/fish products which are listed in Annex 1 of Regulation 1005/2008  as not requiring a catch certificate.
+
+Note: document code Y927 is not required for those fish/fish products falling within commodity codes that are completely excluded from the scope of the Regulations. Example: eels caught in marine waters declare code C673; eels caught in fresh water declare code Y927; eels from acquaculture, obtained from fry or larvae declare code Y927. Freshwater crayfish, however, are not subject to IUU control and therefore no document code should be declared.
+
+(These examples were correct at time of printing and are intended to assist in deciding which document code is declared or if one is necesssary. This advice is not definitive and you should check current regulations in The Official Journal of the EU or with lead department Defra).",
+Y988,Import,Item,A proof that the product has been exported from the United States to the Union prior to 10.11.2020 (Reg. 2020/1646),"Use one of the following status codes as appropriate (see Appendix C10) AC, AE,AF,AG,AP,GE, GP, HP, IA, IE, JA, JE",
+,,,,,

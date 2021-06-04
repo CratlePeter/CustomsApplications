@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		
+		<!-- ====================== Item Tree View==================== -->
+		<record id="item_item_view_tree" model="ir.ui.view">
+	        <field name="name">item.tree</field>
+	        <field name="model">customs.item</field>
+	        <field name="arch" type="xml">
+	            <tree string="Item" >
+	                <field name="declaration_id" optional="show"/>
+	                <field name="ducr_code" optional="show"/>
+	                <field name="comodity_code" optional="show"/>
+	                <field name="goods_description" optional="show"/>
+	                <field name="item_cost" optional="show"/>
+	                <field name="currency_id" optional="show"/>
+	                <field name="valuation_method" optional="show"/>
+	                <field name="net_mass" optional="show"/>
+	                <field name="state" optional="show"/>
+	            </tree>
+	        </field>
+	    </record>
+	    
+	    <!-- ====================== Item Form View==================== -->
+		<record id="item_item_view_form" model="ir.ui.view">
+	        <field name="name">item.form</field>
+	        <field name="model">customs.item</field>
+	        <field name="arch" type="xml">
+	            <form string="Item">
+	            	<header>
+	            		 <button name="action_lock" string="Lock" type="object" states="new,draft,sent" class="btn-primary"/>
+                         <field name="state" widget="statusbar" statusbar_visible="draft,attach,lock,sent"/>
+               	    </header>
+	            	<div class="oe_title">
+                        <label for="declaration_id"/>
+                        <h1>
+                            <field name="declaration_id"  attrs="{'readonly': [('state', '=', 'lock')]}"/>
+                        </h1>
+                    </div>
+                    <group colspan="4" col="4">
+                    	<field name="ducr_code" attrs="{'readonly': [('state', '=', 'lock')]}"/>
+		                <field name="comodity_code" attrs="{'readonly': [('state', '=', 'lock')]}"/>
+		                <field name="goods_description" attrs="{'readonly': [('state', '=', 'lock')]}"/>
+		                <field name="valuation_method" attrs="{'readonly': [('state', '=', 'lock')]}"/>
+		                <field name="item_cost" attrs="{'readonly': [('state', '=', 'lock')]}"/>
+		                <field name="currency_id" attrs="{'readonly': [('state', '=', 'lock')]}"/>
+		                <field name="net_mass" attrs="{'readonly': [('state', '=', 'lock')]}"/>
+                    </group>
+                    <notebook>
+			<page string="Packages" name="package">
+                            <field name="package_line" attrs="{'readonly': [('state', '=', 'lock')]}">
+                            	<tree string="Item" editable="bottom">
+                            		<field name="no_of_package" optional="show"/>
+                            		<field name="box_type_id" optional="show"/>
+                            		<field name="package_mark" optional="show"/>
+                            		
+                            	</tree>
+                          	</field>
+			</page> 
+                         
+                         <page string="AI Statements" name="ai_statement">
+                         	<field name="ai_statement_line" attrs="{'readonly': [('state', '=', 'lock')]}">
+	                         	<tree string="Item" editable="bottom">
+	                           		<field name="box_type_id"/>
+	                           		<field name="associated_value" optional="show"/>
+	                           	</tree>
+	                         </field>
+                         </page>
+                         
+                         <page string="Document Codes" name="document_code">
+                         	<field name="document_code_line" attrs="{'readonly': [('state', '=', 'lock')]}">
+	                         	<tree string="Item" editable="bottom">
+	                           		<field name="name"/>
+	                           		<field name="document_ref" optional="show"/>
+	                           		<field name="document_status" optional="show"/>
+	                           	</tree>
+	                         </field>
+                         </page>
+                         <page string="Previous Documents" name="prev_doc">
+                         	<field name="previous_document_line" attrs="{'readonly': [('state', '=', 'lock')]}">
+	                         	<tree string="Item" editable="bottom">
+	                           		<field name="document_type" optional="show"/>
+	                           		<field name="doc_value" optional="show"/>
+	                           	</tree>
+	                         </field>
+                         </page>
+                         <page string="Containers" name="container">
+                         	<field name="container_line" attrs="{'readonly': [('state', '=', 'lock')]}">
+	                         	<tree string="Item" editable="bottom">
+	                           		<field name="name"/>
+	                           	</tree>
+	                         </field>
+                         </page>
+                         
+                   </notebook>
+	            </form>
+	        </field>
+	    </record>
+        
+        <!-- ====================== Item Action==================== -->
+		<!-- <record id="action_item_item" model="ir.actions.act_window">
+	        <field name="name">Items</field>
+	        <field name="type">ir.actions.act_window</field>
+	        <field name="res_model">customs.item</field>
+	        <field name="view_mode">form</field>
+	        <field name="search_view_id" ref="item_item_view_form"/>
+	        <field name="context"></field>
+			<field name="domain"></field>
+	    </record> -->
+	    
+	    <!-- ====================== Draft Item Action==================== -->
+		<record id="action_draft_item" model="ir.actions.act_window">
+	        <field name="name">Draft Items</field>
+	        <field name="type">ir.actions.act_window</field>
+	        <field name="res_model">customs.item</field>
+	        <field name="view_mode">tree,form</field>
+	        <field name="search_view_id" ref="item_item_view_tree"/>
+	        <field name="context"></field>
+			<field name="domain">[('state','=','draft')]</field>
+	    </record>
+	    
+	    
+
+	</data>
+</odoo>
