@@ -1,8 +1,8 @@
-id,name
-1,"1 - Sea"
-2,"2 - Rail"
-3,"3 - Road"
-4,"4 - Air"
-5,"5 - Post"
-6,"6 - RoRo"
-9,"9 - Own propulsion"
+id,code,name
+1,1,"1 - Sea"
+2,2,"2 - Rail"
+3,3,"3 - Road"
+4,4,"4 - Air"
+5,5,"5 - Post"
+6,6,"6 - RoRo"
+7,9,"9 - Own propulsion"

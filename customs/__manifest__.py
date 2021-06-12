@@ -14,7 +14,7 @@
         This Odoo module is a front-end to the Cratle declarations server.  If this is not installed then you can email declarations for processing.
 """,
     
-    'depends'    : ['base',],
+    'depends'    : ['mail','contacts','base',],
     
     'data'       : [
                     'security/security_group.xml',
@@ -25,6 +25,11 @@
                     'data/customs.document.code.csv',
                     'data/customs.box.type.csv',
                     'data/customs.previous.document.csv',
+                    'data/customs.procedure.csv',
+                    'data/customs.port.csv',
+                    'data/customs.document.status.csv',
+                    'data/customs.preference.code.csv',
+                    'data/email_template.xml',
                     'views/master_views.xml',
                     'views/res_partner_views.xml',
                     'views/declaration_views.xml',
