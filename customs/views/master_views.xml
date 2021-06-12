@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<!-- ====================== Package Type ==================== -->
+	    <record id="box_type_view_tree" model="ir.ui.view">
+	        <field name="name">box.type.tree</field>
+	        <field name="model">customs.box.type</field>
+	        <field name="arch" type="xml">
+	            <tree string="Box Type" editable="top">
+	                <field name="code"/>
+			<field name="name"/>
+	            </tree>
+	        </field>
+	    </record>
+        
+		<record id="action_box_type" model="ir.actions.act_window">
+	        <field name="name">Box Type</field>
+	        <field name="type">ir.actions.act_window</field>
+	        <field name="res_model">customs.box.type</field>
+	        <field name="view_mode">tree</field>
+	        <field name="search_view_id" ref="box_type_view_tree"/>
+	        <field name="context"></field>
+			<field name="domain"></field>
+		</record> 
+	    
+	    <!-- ====================== AI Codes ==================== -->
+		<record id="ai_code_view_tree" model="ir.ui.view">
+	        <field name="name">customs.ai.codes.tree</field>
+	        <field name="model">customs.addinfocodes</field>
+	        <field name="arch" type="xml">
+	            <tree string="AI Codes" editable="top">
+	                <field name="name"/>
+	            </tree>
+	        </field>
+	    </record>
+
+		<record id="action_aicode" model="ir.actions.act_window">
+	        <field name="name">AI Codes</field>
+	        <field name="type">ir.actions.act_window</field>
+	        <field name="res_model">customs.addinfocodes</field>
+	        <field name="view_mode">tree</field>
+	        <field name="search_view_id" ref="ai_code_view_tree"/>
+	        <field name="context"></field>
+			<field name="domain"></field>
+	    </record>
+
+	    
+	    <!-- ====================== Incoterm ==================== -->
+		<record id="incoterm_incoterm_view_tree" model="ir.ui.view">
+	        <field name="name">incoterm.tree</field>
+	        <field name="model">customs.incoterm</field>
+	        <field name="arch" type="xml">
+	            <tree string="Incoterm" editable="top">
+	                <field name="name"/>
+	                <field name="show_shipping_cost"/>
+	            </tree>
+	        </field>
+	    </record>
+        
+		<record id="action_incoterm_incoterm" model="ir.actions.act_window">
+	        <field name="name">Incoterm</field>
+	        <field name="type">ir.actions.act_window</field>
+	        <field name="res_model">customs.incoterm</field>
+	        <field name="view_mode">tree</field>
+	        <field name="search_view_id" ref="incoterm_incoterm_view_tree"/>
+	        <field name="context"></field>
+			<field name="domain"></field>
+	    </record>
+	    
+	    <!-- ====================== Transport Mode Inland ==================== -->
+		<record id="transport_mode_inland_view_tree" model="ir.ui.view">
+	        <field name="name">transport.mode.tree</field>
+	        <field name="model">customs.transport.mode</field>
+	        <field name="arch" type="xml">
+	            <tree string="Transport Mode Inland" editable="top">
+	                <field name="name"/>
+	            </tree>
+	        </field>
+	    </record>
+        
+		<record id="action_transport_mode_inland" model="ir.actions.act_window">
+	        <field name="name">Transport Mode</field>
+	        <field name="type">ir.actions.act_window</field>
+	        <field name="res_model">customs.transport.mode</field>
+	        <field name="view_mode">tree</field>
+	        <field name="search_view_id" ref="transport_mode_inland_view_tree"/>
+	        <field name="context"></field>
+			<field name="domain"></field>
+	    </record>
+	    
+	    <!-- ====================== Document Code tree ==================== -->
+	    <record id="document_code_view_tree" model="ir.ui.view">
+	        <field name="name">document.code.tree</field>
+	        <field name="model">customs.document.code</field>
+	        <field name="arch" type="xml">
+	            <tree string="Document Code" editable="top">
+			<field name="code"/>
+	                <field name="name"/>
+			<field name="type_of_declaration"/>
+			<field name="details"/>
+			<field name="declaration_level"/>
+	            </tree>
+	        </field>
+	    </record>
+        
+  	    <record id="action_document_code" model="ir.actions.act_window">
+	        <field name="name">Document Code</field>
+	        <field name="type">ir.actions.act_window</field>
+	        <field name="res_model">customs.document.code</field>
+	        <field name="view_mode">tree</field>
+	        <field name="search_view_id" ref="document_code_view_tree"/>
+	        <field name="context"></field>
+			<field name="domain"></field>
+	    </record>
+	   
+	    <!-- ====================== Previous Document Code tree ==================== -->
+		<record id="previous_document_code_view_tree" model="ir.ui.view">
+	        <field name="name">previous.document.code.tree</field>
+	        <field name="model">customs.previous.document</field>
+	        <field name="arch" type="xml">
+	            <tree string="Previous Document Code" editable="top">
+	                <field name="code"/>
+					<field name="name"/>
+	            </tree>
+	        </field>
+	    </record>
+
+		<record id="action_previous_document_code" model="ir.actions.act_window">
+	        <field name="name">Previous Document Code</field>
+	        <field name="type">ir.actions.act_window</field>
+	        <field name="res_model">customs.previous.document</field>
+	        <field name="view_mode">tree</field>
+	        <field name="search_view_id" ref="previous_document_code_view_tree"/>
+	        <field name="context"></field>
+			<field name="domain"></field>
+	    </record>
+
+	    <!-- ====================== Port tree ==================== -->
+		<record id="port_view_tree" model="ir.ui.view">
+	        <field name="name">port.tree</field>
+	        <field name="model">customs.port</field>
+	        <field name="arch" type="xml">
+	            <tree string="UK Port" editable="top">
+	                <field name="code"/>
+					<field name="name"/>
+	            </tree>
+	        </field>
+	    </record>
+
+		<record id="action_port" model="ir.actions.act_window">
+	        <field name="name">UK Port</field>
+	        <field name="type">ir.actions.act_window</field>
+	        <field name="res_model">customs.port</field>
+	        <field name="view_mode">tree</field>
+	        <field name="search_view_id" ref="port_view_tree"/>
+	        <field name="context"></field>
+			<field name="domain"></field>
+	    </record>
+
+	    <!-- ====================== Procedure Code tree ==================== -->
+		<record id="cpc_view_tree" model="ir.ui.view">
+	        <field name="name">cpc.tree</field>
+	        <field name="model">customs.procedure</field>
+	        <field name="arch" type="xml">
+	            <tree string="Customs Procedure Code" editable="top">
+	                <field name="code"/>
+					<field name="name"/>
+					<field name="type"/>
+	            </tree>
+	        </field>
+	    </record>
+
+		<record id="action_cpc" model="ir.actions.act_window">
+	        <field name="name">Customs Procedure Code</field>
+	        <field name="type">ir.actions.act_window</field>
+	        <field name="res_model">customs.procedure</field>
+	        <field name="view_mode">tree</field>
+	        <field name="search_view_id" ref="cpc_view_tree"/>
+	        <field name="context"></field>
+			<field name="domain"></field>
+	    </record>
+
+	    <!-- ====================== Preference Code tree ==================== -->
+		<record id="preference_view_tree" model="ir.ui.view">
+	        <field name="name">preference.tree</field>
+	        <field name="model">customs.preference.code</field>
+	        <field name="arch" type="xml">
+	            <tree string="Types of Preference" editable="top">
+	                <field name="code"/>
+					<field name="name"/>
+					<field name="description"/>
+	            </tree>
+	        </field>
+	    </record>
+
+		<record id="action_preference" model="ir.actions.act_window">
+	        <field name="name">Preference codes</field>
+	        <field name="type">ir.actions.act_window</field>
+	        <field name="res_model">customs.preference.code</field>
+	        <field name="view_mode">tree</field>
+	        <field name="search_view_id" ref="preference_view_tree"/>
+	        <field name="context"></field>
+			<field name="domain"></field>
+	    </record>
+
+		<!-- ====================== Document status codes ==================== -->
+		<record id="docstatus_view_tree" model="ir.ui.view">
+	        <field name="name">docstatus.tree</field>
+	        <field name="model">customs.document.status</field>
+	        <field name="arch" type="xml">
+	            <tree string="Document status" editable="top">
+	                <field name="code"/>
+					<field name="description"/>
+	            </tree>
+	        </field>
+	    </record>
+
+		<record id="action_docstatus" model="ir.actions.act_window">
+	        <field name="name">Document status codes</field>
+	        <field name="type">ir.actions.act_window</field>
+	        <field name="res_model">customs.document.status</field>
+	        <field name="view_mode">tree</field>
+	        <field name="search_view_id" ref="preference_view_tree"/>
+	        <field name="context"></field>
+			<field name="domain"></field>
+	    </record>
+	</data>
+</odoo>

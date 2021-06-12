@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+	    <!--================= Menu Cratle Custom Root============= -->	          
+	    <menuitem id="menu_cratle_custom_root"
+		          name="Cratle Customs"
+		          web_icon="erpcall_v13_declaration_form,static/description/favicon.png"
+		          sequence="2"/>
+				          
+		<!--================= Menu Declarations ============= -->	          
+	    <menuitem id="menu_declaration_sub_root"
+		          name="Declarations"
+		          parent="menu_cratle_custom_root"
+		          sequence="1"/>
+		          
+		<!--================= Menu Draft Declarations ============= -->	          
+	    <menuitem id="menu_draft_declaration"
+		          name="Draft Declarations"
+		          parent="menu_declaration_sub_root"
+		          action="action_draft_declaration"
+		          sequence="1"/>
+		          
+		<!--================= Menu Draft Items ============= -->	          
+	    <menuitem id="menu_draft_item"
+		          name="Draft Items"
+		          parent="menu_declaration_sub_root"
+		          action="action_draft_item"
+		          sequence="2"/>
+		          
+		<!--================= Menu Posted Declarations ============= -->	          
+	    <menuitem id="menu_posted_dec"
+		          name="Posted Declarations"
+		          parent="menu_declaration_sub_root"
+		          action="action_posted_dec"
+		          sequence="3"/>
+		          
+        <!--================= Menu Settings ============= -->	          
+	    <menuitem id="menu_declaration_setting"
+		          name="Settings"
+		          parent="menu_cratle_custom_root"
+		          sequence="2"/>
+    
+	    <!--================= Menu Consignor ============= -->	          
+	    <menuitem id="menu_consignor"
+		          name="Consignor"
+		          parent="menu_declaration_setting"
+		          action="action_consignor"
+		          sequence="1"/>
+		          
+	    <!--================= Menu Consignor ============= -->	          
+	    <menuitem id="menu_consignee"
+		          name="Consignee"
+		          parent="menu_declaration_setting"
+		          action="action_consignee"
+		          sequence="2"/>
+		          
+		<!--================= Menu Box Type ============= -->       
+   	    <menuitem id="menu_box_type"
+		          name="Box Type"
+		          parent="menu_declaration_setting"
+		          action="action_box_type"
+		    sequence="3"/> 
+		          
+		<!--================= Menu AI Codes  ============= -->	         
+	    <menuitem id="menu_aicode"
+		          name="AI Codes"
+		          parent="menu_declaration_setting"
+		          action="action_aicode"
+		          sequence="4"/>
+		          
+		<!--================= Menu Incoterm ============= -->       
+	    <menuitem id="menu_incoterm_incoterm"
+		          name="Incoterm"
+		          parent="menu_declaration_setting"
+		          action="action_incoterm_incoterm"
+		          sequence="5"/>
+		          
+		<!--================= Menu Transport Mode Inland  ============= -->	         
+	    <menuitem id="menu_transport_mode_inland"
+		          name="Transport Mode"
+		          parent="menu_declaration_setting"
+		          action="action_transport_mode_inland"
+		          sequence="6"/>
+		          
+		<!--================= Menu Document Code  ============= -->	         
+	    <menuitem id="menu_document_code"
+		          name="Document Code"
+		          parent="menu_declaration_setting"
+		          action="action_document_code"
+		          sequence="7"/>
+
+		<!--================= Menu Previous Document Code  ============= -->
+	    <menuitem id="menu_previous_document_code"
+		          name="Previous Document Code"
+		          parent="menu_declaration_setting"
+		          action="action_previous_document_code"
+		          sequence="8"/>
+
+		<!--================= Menu Previous Document Code  ============= -->
+	    <menuitem id="menu_port"
+		          name="Ports"
+		          parent="menu_declaration_setting"
+		          action="action_port"
+		          sequence="9"/>
+
+		<!--================= Menu Previous Document Code  ============= -->
+	    <menuitem id="menu_cpc"
+		          name="Customs Procedure Codes"
+		          parent="menu_declaration_setting"
+		          action="action_cpc"
+		          sequence="10"/>
+
+		<!--================= Menu Preference Codes  ============= -->
+	    <menuitem id="menu_preference"
+		          name="Preferences for goods"
+		          parent="menu_declaration_setting"
+		          action="action_preference"
+		          sequence="11"/>
+
+		<!--================= Menu Document Status Codes  ============= -->
+	    <menuitem id="menu_docustatus"
+		          name="Document status codes"
+		          parent="menu_declaration_setting"
+		          action="action_docstatus"
+		          sequence="12"/>
+	</data>
+
+</odoo>
