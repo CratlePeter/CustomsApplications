@@ -1,0 +1,268 @@
+code,name
+TRT,Althorpe
+BLY,Amble
+WAT,Appledore
+AVO,Avonmouth
+LON,"Baltic Wharf, Rochford"
+BAR,Barrow-In-Furness
+IMM,Barrow-On-Humber
+CDF,Barry Dock
+IMM,Barton-On-Humber
+TRT,Beckingham
+BLY,Berwick
+WAT,Bideford
+LIV,Birkenhead
+BLY,Blyth
+BOS,Boston
+WAT,Bridgwater
+HUL,Bridlington
+WEY,Bridport
+COL,Brightlingsea
+PTB,Briton Ferry
+TNM,Brixham
+COL,Burnham-on-Crouch
+TRT,Burton Stather
+LLA,Caernarfon
+CDF,Cardiff
+FOY,Charlestown
+NPT,Chepstow
+COL,Colchester
+COW,Cowes
+TNM,Dartmouth
+DOV,Dover
+ELL,Ellesmere Port
+EXE,Exeter
+EXE,Exmouth
+FAL,Falmouth
+WTS,Faversham
+FXT,Felixstowe
+COL,Fingringhoe
+FIS,Fishguard
+FLE,Fleetwood
+TRT,Flixborough Wharf
+FOY,Fowey
+TRT,Gainsborough
+LIV,Garston
+HEY,Glasson Dock
+SSS,Gloucester
+GOO,Goole
+GTY,Great Yarmouth
+GRI,Grimsby
+TRT,Grove Wharves
+TRT,Guness Wharf
+HTP,Hartlepool
+HRH,Harwich
+HEY,Heysham
+LON,Holehaven
+HLD,Holyhead
+GOO,Howdendyke
+HUL,Hull
+IMM,Immingham
+IPS,Ipswich
+TRT,Keadby
+KLN,Kings Lynn
+HEY,Lancaster
+LON,Leigh-On-Sea
+SHO,Littlehampton
+LIV,Liverpool
+LLA,Llanddulas
+SWA,Llanelli
+LON,London
+LGP,London Gateway
+LOW,Lowestoft
+STN,Lymington
+COL,Maldon
+MNC,Manchester
+MED,Medway
+MID,Middlesbrough
+MIL,Milford
+BAR,Millom
+HRH,Mistley
+MOS,Mostyn
+TRT,Neap House
+PTB,Neath Abbey
+TYN,Newcastle
+NHV,Newhaven
+IMM,New Holland
+PEN,Newlyn
+NPT,"Newport, Gwent"
+TYN,North Shields
+NTH,Northwich
+NOR,Norwich
+PLY,Padstow
+PAR,Par
+HRH,Parkeston Quay
+MNC,Partington
+MIL,Pembroke Ferry
+MIL,Pembroke (Oils) So
+MIL,Pembroke Epu
+FAL,Penryn
+PEN,Penzance
+PLY,Plymouth
+TRT,Point Bid
+POO,Poole
+LLA,Port Penrhyn
+AVO,Portishead
+PTL,Portland
+PTM,Portsmouth
+PTB,Port Talbot
+MED,Queenborough
+RMG,Ramsgate
+MOS,Rhyl
+MED,Ridham Dock
+MED,Rochester
+LON,Rochford
+COL,Rowhedge
+AVO,Royal Portbury Dock
+RUN,Runcorn
+FOL,Rye
+SCA,Scarborough
+TRT,Scunthorpe
+SUN,Seaham
+GOO,Selby
+SSS,Sharpness
+MED,Sheerness
+SHO,Shoreham
+MOS,Shotton
+SIL,Silloth
+STN,Southampton
+LON,Southend (Corporation Jetty)
+TYN,South Shields
+SUN,Sunderland
+SWA,Swansea
+MID,Teesport
+TNM,Teignmouth
+LON,Tilbury
+TEP,Thames Europort
+THP,Thamesport
+EXE,Topsham
+TNM,Torquay
+TRT,Trent
+FAL,Truro
+TYN,Tyne
+RUN,Warrington
+WAT,Watchet
+NOR,Wells
+WEY,Weymouth
+WTB,Whitby
+WHV,Whitehaven
+WTS,Whitstable
+WIS,Wisbech
+COL,Wivenhoe
+WOR,Workington
+DGS,Castletown
+DGS,Douglas
+DGS,Peel
+DGS,Ramsey
+JSY,St Helier
+GSY,St Peter Port
+ABD,Aberdeen
+GRK,Annan
+DUN,Arbroath
+ARD,Ardrossan
+AYR,Ayr
+GRK,Barcaldine
+GRG,Braefoot Bay
+GLW,Bowling
+FRB,Buckie
+INV,Burghead
+GRG,Burntisland
+GRK,Campbeltown
+INV,"Corpach, Incl Annat Pier"
+DUN,Dundee
+GRK,Faslane
+GRK,Finnart
+FRB,Fraserburgh
+GRK,Furnace
+GRK,Garlieston
+AYR,Girvan
+GLW,Glasgow
+GRG,Grangemouth
+GRK,Greenock
+HPT,Hound Point Terminal
+GRK,Hunterston
+INV,Invergordon
+GRG,Inverkeithing
+INV,Inverness
+IRV,Irvine
+GRK,Islay
+KKD,Kirkcaldy
+KWL,Kirkwall
+LEI,Leith
+LER,Lerwick
+INV,Lochaline
+INV,Lossiemouth
+FRB,Macduff
+GRG,Methil
+MON,Montrose
+GRK,Oban
+GRK,Palnackie
+DUN,Perth
+PHD,Peterhead
+ROS,Rosyth
+LER,Scalloway
+INV,Scrabster
+STO,Stornoway
+GRK,Stranraer
+KWL,Stromness
+DUN,Tayport
+INV,Ullapool
+INV,Wick
+BEL,Belfast
+CLR,Coleraine
+BEL,Larne
+LDY,Londonderry
+CLR,Portrush
+WPT,Warrenpoint
+ABZ,Aberdeen Airport
+BFS,Belfast International Airport
+BQH,Biggin Hill Airport
+BHX,Birmingham Airport
+BLK,Blackpool International Airport
+BOH,Bournemouth (Hurn) Airport
+BRS,Bristol Airport
+CBG,Cambridge Airport
+CWL,Cardiff (Wales) Airport
+CVT,Coventry Airport
+MME,Durham Tees Valley (Teesside) Airport
+EMA,East Midlands Airport
+EDI,Edinburgh Airport
+EXT,Exeter Airport
+FAB,Farnborough Airport
+FZO,Filton Aerodrome (Bristol)
+GLA,Glasgow Airport
+HUY,Humberside International Airport
+LBA,Leeds Bradford Airport
+LPL,Liverpool John Lennon Airport
+LYD,London Ashford (Lydd) Airport
+LCY,London City Airport
+LGW,London Gatwick Airport
+LHR,London Heathrow Airport
+LTN,London Luton Airport
+LSA,London Stansted Airport
+MAN,Manchester Airport
+MSE,Manston Airport
+NCL,Newcastle Airport
+NQY,Newquay Airport
+NWI,Norwich Airport
+PLH,Plymouth Airport
+PIK,Prestwick Airport
+RWY,Ronaldsway Airport (Isle of Man)
+ESH,Shoreham Airport
+SOU,Southampton (Eastleigh) Airport
+SEN,Southend Airport
+LSI,Sumburgh Airport (Shetland)
+ASD,Ashford
+LBK,Barking
+DAG,Dagenham
+DVY,Daventry
+NGO,Dollands Moor
+KMK,Irvine
+SCP,Scunthorpe
+WDN,Widnes
+DEU,Dover / Eurotunnel
+EUT,Eurotunnel
+HRH,Harwich International Port
+KIL,Killingholme
+MIL,Pembroke
+PUF,Purfleet
