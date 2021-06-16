@@ -4,11 +4,13 @@ from odoo import api, fields, models, SUPERUSER_ID, _
 
 class CustomsItem(models.Model):
     _name = 'customs.item'
-    rec_name = 'declaration_id'
+    _rec_name = 'declaration_id'
     _description = 'Item'
-    
+
     declaration_id = fields.Many2one('customs.declaration', string="Related Header", required=True)
-    cp_code = fields.Many2one('customs.procedure', string="Custom Procedure", required=True)
+    dec_type = fields.Char(string="Declaration Type")
+    cp_code = fields.Many2one('customs.procedure', string="Custom Procedure", required=True,
+                              domain="[('type','=',dec_type)]")
     comodity_code = fields.Char(string="Commodity Code")
     goods_description = fields.Char(string="Goods Description")
     country_of_origin = fields.Many2one('res.country', string="Country of origin", required=True)
@@ -45,6 +47,11 @@ class CustomsItem(models.Model):
         if res.state == 'new':
             res.state = 'draft'
         return res
+
+    @api.onchange('declaration_id','cp_code')
+    def onchange_declaration_setup_type (self):
+        for dec in self.declaration_id:
+            self.dec_type = dec.dec_type[:1]
     
 class ContainerLine(models.Model):
     _name = 'customs.item.container.line'

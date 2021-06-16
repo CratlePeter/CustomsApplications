@@ -32,6 +32,7 @@
 	        <field name="arch" type="xml">
 	            <form string="Declaration">
 	            	<header>
+						 <button name="action_create_item" string="Add goods details" type="object" class="btn-primary"/>
 	            		 <button name="action_post" string="Post" type="object" states="new,draft" class="btn-primary"/>
 	            		 <button name="action_send_email" string="Send by Email" type="object" class="btn-primary"/>
                          <field name="state" widget="statusbar" statusbar_visible="draft,post,sent"/>

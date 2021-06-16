@@ -75,7 +75,8 @@ class CustomsProcedureCode(models.Model):
 
     code = fields.Char(string="Code", required=True)
     name = fields.Char(string="Name", required=True)
-    type = fields.Char(string="Import or Export", required=True)
+    type = fields.Selection(selection=[('I', 'Import'),
+                                       ('E', 'Export')], string="Import or Export", required=True)
 
 
 class CustomsPreferenceCode(models.Model):

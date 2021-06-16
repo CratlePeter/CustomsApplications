@@ -8,6 +8,7 @@
 	        <field name="arch" type="xml">
 	            <tree string="Item" >
 	                <field name="declaration_id" optional="show"/>
+					<field name="dec_type" invisible="1"/>
 	                <field name="cp_code" optional="show"/>
 	                <field name="comodity_code" optional="show"/>
 	                <field name="goods_description" optional="show"/>
@@ -47,6 +48,7 @@
 		                <field name="currency_id" attrs="{'readonly': [('state', '=', 'lock')]}"/>
 		                <field name="net_mass" attrs="{'readonly': [('state', '=', 'lock')]}"/>
                     </group>
+						<field name="dec_type" invisible="1"/>
                     <notebook>
 						<page string="Packages" name="package">
 							<field name="package_line" attrs="{'readonly': [('state', '=', 'lock')]}">

@@ -26,6 +26,9 @@ access_customs_procedure_code3,customs.procedure_code3,model_customs_procedure,g
 access_customs_preference_1,customs.preference1,model_customs_preference_code,group_agent,1,0,0,0
 access_customs_preference_2,customs.preference2,model_customs_preference_code,group_data_admin,1,1,1,0
 access_customs_preference_3,customs.preference3,model_customs_preference_code,group_administrators,1,1,1,1
+access_document_status1,customs.document.status1,model_customs_document_status,group_agent,1,0,0,0
+access_document_status2,customs.document.status2,model_customs_document_status,group_data_admin,1,1,1,0
+access_document_status3,customs.document.status3,model_customs_document_status,group_administrators,1,1,1,1
 access_customs_declaration1,customs.declaration1,model_customs_declaration,group_agent,1,1,1,0
 access_customs_declaration2,customs.declaration2,model_customs_declaration,group_data_admin,1,1,1,1
 access_customs_item1,customs.item1,model_customs_item,group_agent,1,1,1,0

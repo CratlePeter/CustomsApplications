@@ -26,8 +26,8 @@ class CustomsDeclaration(models.Model):
             rec.number_of_package = total_sum_package
     
     name = fields.Char(string="Transaction Ref.", required=True)
-    consignor_id = fields.Many2one('res.partner', string="Consignor")
-    consignee_id = fields.Many2one('res.partner', string="Consignee")
+    consignor_id = fields.Many2one('res.partner', string="Consignor", domain="[('is_company','=',True)]")
+    consignee_id = fields.Many2one('res.partner', string="Consignee", domain="[('is_company','=',True)]")
     
     incoterm_id = fields.Many2one('customs.incoterm', string="Incoterm")
     show_shipping_cost = fields.Boolean(related='incoterm_id.show_shipping_cost', string='Visible Shipping Cost')
@@ -65,7 +65,21 @@ class CustomsDeclaration(models.Model):
                     return
                 else:
                     raise UserError(_("Please only use numbers and letters."))
-    
+
+    def action_create_item(self):
+        view_id = self.env.ref('cratle_customs.item_item_view_form').id
+        return  {
+            'name':'item_item_view_form',
+            'res_model':'customs.item',
+            'type':'ir.actions.act_window',
+            'view_type':'form',
+            'view_mode':'form',
+            'view_id':view_id,
+            'context':'{}',
+            'target':'new',
+        }
+
+
     def action_post(self):
         for dec in self:
             self.write({'state': 'post'})
@@ -77,12 +91,9 @@ class CustomsDeclaration(models.Model):
         for dec in self:
             if template_obj:
                 body = template_obj.body_html
-                _logger.debug(body)
                 try:
                     item_line = item_line_pattern.search(body).group(0)
-                    _logger.debug(item_line)
                 except AttributeError:
-                    _logger.debug("Unable to find the item line in the email template.")
                     return
                 body = ''
                 if item_line:
@@ -185,10 +196,10 @@ class CustomsDeclaration(models.Model):
         last_year_number = year[-1:]
         
         if not res.consignor_id.tid:
-            raise UserError(_("There is no set TID for consignor %s !!\n Please Click setting and see in dropdown there is consignor menu set there TID in your consignor !!") % (res.consignor_id.name))    
+            raise UserError(_("There is no set TID for consignor %s.\n Please the TID to be the company EORI.  If no EORI is available then create your own reference.") % (res.consignor_id.name))
             
         if not res.consignee_id.tid:
-            raise UserError(_("There is no set TID for consignee %s !!\n Please Click setting and see in dropdown there is consignee menu set there TID in your consignee !!") % (res.consignee_id.name))
+            raise UserError(_("There is no set TID for consignee %s.\n Please the TID to be the company EORI.  If no EORI is available then create your own reference.") % (res.consignee_id.name))
             
         if res.name and res.consignor_id and res.consignor_id.country_id.code == 'GB' and res.consignee_id and res.consignee_id.country_id.code == 'GB':
             res.ducr = last_year_number + res.consignor_id.tid + res.consignee_id.tid + '-' + res.name 
@@ -209,14 +220,15 @@ class CustomsDeclaration(models.Model):
             
         if res.goods_port == 'yes':
             res.dec_type += 'A' 
-        if res.goods_port == 'no':
+        else:
             res.dec_type += 'D'
             
         return res
     
-    @api.onchange('goods_port','consignee_id')
+    @api.onchange('goods_port','consignee_id','consignor_id')
     def onchange_goods_port(self):
         for res in self:
+
             if res.consignee_id and res.consignee_id.country_id.code == 'GB':
                 res.dec_type = 'IM' 
                 
@@ -227,8 +239,6 @@ class CustomsDeclaration(models.Model):
                 res.dec_type += 'A' 
             if res.consignee_id and res.goods_port == 'no':
                 res.dec_type += 'D'
-        
-            
         
                                         
     
