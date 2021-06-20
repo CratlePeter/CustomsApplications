@@ -28,7 +28,11 @@
 	        <field name="arch" type="xml">
 	            <form string="Item">
 	            	<header>
-	            		 <button name="action_lock" string="Lock" type="object" states="new,draft,sent" class="btn-primary"/>
+						<button name="action_lock" string="Lock" type="object" states="new,draft,attach,sent"
+								class="btn-primary"/>
+						<button name="action_rollback_to_draft" string="Rollback to draft" type="object"
+                                class="btn-secondary" groups="cratle_customs.group_administrators"
+                                attrs="{'invisible':[('state', 'in', ('new','draft','attach'))]}"/>
                          <field name="state" widget="statusbar" statusbar_visible="draft,attach,lock,sent"/>
                	    </header>
 	            	<div class="oe_title">
@@ -41,12 +45,12 @@
                     	<field name="cp_code" attrs="{'readonly': [('state', '=', 'lock')]}"/>
 		                <field name="comodity_code" attrs="{'readonly': [('state', '=', 'lock')]}"/>
 		                <field name="goods_description" attrs="{'readonly': [('state', '=', 'lock')]}"/>
-						<field name="country_of_origin" attrs="{'readonly': [('state', '=', 'lock')]}"/>
-						<field name="preference_code" attrs="{'readonly': [('state', '=', 'lock')]}"/>
-		                <field name="valuation_method" attrs="{'readonly': [('state', '=', 'lock')]}"/>
-		                <field name="item_cost" attrs="{'readonly': [('state', '=', 'lock')]}"/>
-		                <field name="currency_id" attrs="{'readonly': [('state', '=', 'lock')]}"/>
-		                <field name="net_mass" attrs="{'readonly': [('state', '=', 'lock')]}"/>
+						<field name="country_of_origin" attrs="{'invisible':  [('dec_type', '!=', 'I')], 'readonly': [('state', '=', 'lock')]}"/>
+						<field name="preference_code" attrs="{'invisible':  [('dec_type', '!=', 'I')], 'readonly': [('state', '=', 'lock')]}"/>
+		                <field name="valuation_method" attrs="{'invisible':  [('dec_type', '!=', 'I')], 'readonly': [('state', '=', 'lock')]}"/>
+		                <field name="item_cost" attrs="{'readonly': [('state', '=', 'lock')]}" />
+		                <field name="currency_id" attrs="{'readonly': [('state', '=', 'lock')]}" />
+		                <field name="net_mass" attrs="{'readonly': [('state', '=', 'lock')]}" />
                     </group>
 						<field name="dec_type" invisible="1"/>
                     <notebook>
@@ -107,7 +111,18 @@
 	        <field name="view_mode">tree,form</field>
 	        <field name="search_view_id" ref="item_item_view_tree"/>
 	        <field name="context"></field>
-			<field name="domain">[('state','=','draft')]</field>
+			<field name="domain">[('state','in',('draft','attach'))]</field>
+	    </record>
+
+	    <!-- ====================== Draft Item Action==================== -->
+		<record id="action_posted_item" model="ir.actions.act_window">
+	        <field name="name">Sent Items</field>
+	        <field name="type">ir.actions.act_window</field>
+	        <field name="res_model">customs.item</field>
+	        <field name="view_mode">tree,form</field>
+	        <field name="search_view_id" ref="item_item_view_tree"/>
+	        <field name="context"></field>
+			<field name="domain">[('state','in',('lock','sent'))]</field>
 	    </record>
 	</data>
 </odoo>

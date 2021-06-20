@@ -4,9 +4,6 @@ from odoo import api, fields, models, SUPERUSER_ID, _
 from datetime import datetime, timedelta
 from odoo.exceptions import UserError
 import re
-import logging
-
-_logger = logging.getLogger(__name__)
 
 class CustomsDeclaration(models.Model):
     _name = 'customs.declaration'
@@ -29,32 +26,32 @@ class CustomsDeclaration(models.Model):
     consignor_id = fields.Many2one('res.partner', string="Consignor", domain="[('is_company','=',True)]")
     consignee_id = fields.Many2one('res.partner', string="Consignee", domain="[('is_company','=',True)]")
     
-    incoterm_id = fields.Many2one('customs.incoterm', string="Incoterm")
+    incoterm_id = fields.Many2one('customs.incoterm', string="Incoterm", required=True)
     show_shipping_cost = fields.Boolean(related='incoterm_id.show_shipping_cost', string='Visible Shipping Cost')
     goods_port = fields.Selection(selection=[('yes', 'Yes'),
-                                           ('no', 'No')], default='no', string='Are the goods at the port?')
+                                           ('no', 'No')], default='no', string='Are the goods at the port?',
+                                            required=True)
     
-    invoice_cost = fields.Float(string="Invoice Cost for all items")
+    invoice_cost = fields.Float(string="Invoice Cost for all items", required=True)
     invoice_currency_id = fields.Many2one('res.currency', string="Invoice Currency")
     shipping_cost = fields.Float(string="Shipping Cost")
     shipping_currency_id = fields.Many2one('res.currency', string="Shipping Cost Currency")
     
-    transport_mode_id = fields.Many2one('customs.transport.mode', string="Transport Mode")
-    transport_mode_border_id = fields.Many2one('customs.transport.mode', string="Transport Mode at Border")
+    transport_mode_id = fields.Many2one('customs.transport.mode', string="How are goods getting to the border?", required=True)
+    transport_mode_border_id = fields.Many2one('customs.transport.mode', string="How are the goods getting over the border?", required=True)
 
-    uk_port = fields.Many2one('customs.port', string='UK Port')
+    uk_port = fields.Many2one('customs.port', string='UK Port', required=True)
     
     state = fields.Selection(selection=[('new', 'New'),
                                         ('draft', 'Draft'),
-                                        ('post', 'Posted'),
+                                        ('post', 'Committed'),
                                         ('sent', 'Sent')], default='new', string='State')
     
     ducr = fields.Char(string="DUCR")
     number_of_item = fields.Integer(string="Number of Item", compute='_compute_number_of_package')
     number_of_package = fields.Integer(string="Number of Package", compute='_compute_number_of_package')
     dec_type = fields.Char(string="Declaration Type")
-    
-    
+    show_import_fields = fields.Boolean(string="Show fields applicable for import", default=False)
     
     @api.constrains('name')
     def _check_name_string(self):
@@ -75,22 +72,30 @@ class CustomsDeclaration(models.Model):
             'view_type':'form',
             'view_mode':'form',
             'view_id':view_id,
-            'context':'{}',
+            'context': {'default_declaration_id': self.id},
             'target':'new',
         }
 
 
     def action_post(self):
-        for dec in self:
+        self._compute_number_of_package()
+        if self.number_of_item > 0:
             self.write({'state': 'post'})
+        else:
+            raise UserError(_("There are no goods details attached to the header."))
+
+    def action_rollback_to_draft(self):
+        for dec in self:
+            self.write({'state': 'draft'})
             
     def action_send_email(self):
         item_line_pattern = re.compile(r"(--.*--)")
-        template_title = 'Declaration: Send by email'
-        template_obj = self.env['mail.template'].sudo().search([('name', '=', template_title)])
+        template_id = self.env.ref('cratle_customs.email_template_customs_declaration').id
+        template = self.env['mail.template'].browse(template_id)
+
         for dec in self:
-            if template_obj:
-                body = template_obj.body_html
+            if template:
+                body = template.body_html
                 try:
                     item_line = item_line_pattern.search(body).group(0)
                 except AttributeError:
@@ -109,9 +114,11 @@ class CustomsDeclaration(models.Model):
                                                                       item_id.goods_description)
                         updated_item_line = updated_item_line.replace('--item_cost--', str(item_id.item_cost))
                         updated_item_line = updated_item_line.replace('--currency_id--', item_id.currency_id.name)
-                        updated_item_line = updated_item_line.replace('--valuation_method--', item_id.valuation_method)
+                        if item_id.valuation_method:
+                            updated_item_line = updated_item_line.replace('--valuation_method--', item_id.valuation_method)
                         updated_item_line = updated_item_line.replace('--net_mass--', str(item_id.net_mass))
-                        updated_item_line = updated_item_line.replace('--country_of_origin--',
+                        if item_id.country_of_origin:
+                            updated_item_line = updated_item_line.replace('--country_of_origin--',
                                                                       item_id.country_of_origin.code)
                         if item_id.preference_code:
                             updated_item_line = updated_item_line.replace('--preference_code--',
@@ -170,15 +177,43 @@ class CustomsDeclaration(models.Model):
                             updated_item_line = updated_item_line.replace('--container_%s--' % str(sub_item_iterator),
                                                                           container.name)
                             sub_item_iterator += 1
+                        # Consignor
+                        updated_item_line = updated_item_line.replace('--nor_company name--', dec.consignor_id.name)
+                        updated_item_line = updated_item_line.replace('--nor_tid--', dec.consignor_id.tid)
+                        if dec.consignor_id.street:
+                            updated_item_line = updated_item_line.replace('--nor_address 1--', dec.consignor_id.street)
+                        if dec.consignor_id.street2:
+                            updated_item_line = updated_item_line.replace('--nor_address 2--', dec.consignor_id.street2)
+                        if dec.consignor_id.zip:
+                            updated_item_line = updated_item_line.replace('--nor_postcode--', dec.consignor_id.zip)
+                        if dec.consignor_id.country_id:
+                            updated_item_line = updated_item_line.replace('--nor_country--',
+                                                                          dec.consignor_id.country_id.code)
+                        # Consignee
+                        updated_item_line = updated_item_line.replace('--nee_company name--', dec.consignee_id.name)
+                        updated_item_line = updated_item_line.replace('--nee_tid--', dec.consignee_id.tid)
+                        if dec.consignee_id.street:
+                            updated_item_line = updated_item_line.replace('--nee_address 1--', dec.consignee_id.street)
+                        if dec.consignee_id.street2:
+                            updated_item_line = updated_item_line.replace('--nee_address 2--', dec.consignee_id.street2)
+                        if dec.consignee_id.zip:
+                            updated_item_line = updated_item_line.replace('--nee_postcode--', dec.consignee_id.zip)
+                        if dec.consignee_id.country_id:
+                            updated_item_line = updated_item_line.replace('--nee_country--',
+                                                                          dec.consignee_id.country_id.code)
+
+                        # Update item to Sent state
+                        item_id.update_to_sent()
+
+                        # Loop management
                         item_number += 1
-                        body = body + updated_item_line
+                        body += updated_item_line
                     # Set up the metadata for the mail
                     mail_values = {
-                        'subject': template_obj.subject,
-                        'body_html': body,
+                         'body_html': body,
                     }
                     # Send the email
-                    create_and_send_email = self.env['mail.mail'].create(mail_values).send()
+                    template.send_mail(self.id, force_send=True, email_values=mail_values)
                     self.write({'state': 'sent'})
                 else:
                     raise UserError(_("Please check the email template follows the correct format."))
@@ -196,10 +231,10 @@ class CustomsDeclaration(models.Model):
         last_year_number = year[-1:]
         
         if not res.consignor_id.tid:
-            raise UserError(_("There is no set TID for consignor %s.\n Please the TID to be the company EORI.  If no EORI is available then create your own reference.") % (res.consignor_id.name))
+            raise UserError(_("There is no set TID for consignor %s.\nPlease the TID to be the company EORI.  If no EORI is available then create your own reference.") % (res.consignor_id.name))
             
         if not res.consignee_id.tid:
-            raise UserError(_("There is no set TID for consignee %s.\n Please the TID to be the company EORI.  If no EORI is available then create your own reference.") % (res.consignee_id.name))
+            raise UserError(_("There is no set TID for consignee %s.\nPlease the TID to be the company EORI.  If no EORI is available then create your own reference.") % (res.consignee_id.name))
             
         if res.name and res.consignor_id and res.consignor_id.country_id.code == 'GB' and res.consignee_id and res.consignee_id.country_id.code == 'GB':
             res.ducr = last_year_number + res.consignor_id.tid + res.consignee_id.tid + '-' + res.name 
@@ -230,17 +265,13 @@ class CustomsDeclaration(models.Model):
         for res in self:
 
             if res.consignee_id and res.consignee_id.country_id.code == 'GB':
-                res.dec_type = 'IM' 
-                
-            if res.consignee_id and not res.consignee_id.country_id.code == 'GB':
+                res.dec_type = 'IM'
+                res.show_import_fields = True
+            else:
                 res.dec_type = 'EX'
+                res.show_import_fields = False
                 
             if res.consignee_id and res.goods_port == 'yes':
                 res.dec_type += 'A' 
             if res.consignee_id and res.goods_port == 'no':
                 res.dec_type += 'D'
-        
-                                        
-    
-    
-

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 	<data>
-		
+
 		<!-- ====================== Declaration Tree View==================== -->
 		<record id="declaration_view_tree" model="ir.ui.view">
 	        <field name="name">declaration.tree</field>
@@ -24,7 +24,7 @@
 	            </tree>
 	        </field>
 	    </record>
-	    
+
 	    <!-- ====================== Declaration Form View==================== -->
 		<record id="declaration_view_form" model="ir.ui.view">
 	        <field name="name">declaration.form</field>
@@ -32,9 +32,14 @@
 	        <field name="arch" type="xml">
 	            <form string="Declaration">
 	            	<header>
-						 <button name="action_create_item" string="Add goods details" type="object" class="btn-primary"/>
-	            		 <button name="action_post" string="Post" type="object" states="new,draft" class="btn-primary"/>
-	            		 <button name="action_send_email" string="Send by Email" type="object" class="btn-primary"/>
+                        <button name="action_create_item" string="Add goods details" type="object" class="btn-primary"
+                                attrs="{'invisible':[('state', 'in', ('post','sent'))]}"/>
+                        <button name="action_post" string="Lock" type="object" states="new,draft" class="btn-primary"/>
+                        <button name="action_send_email" string="Send to Customs" type="object" class="btn-primary"
+                                attrs="{'invisible':[('state', 'in', ('new','draft','sent'))]}"/>
+                        <button name="action_rollback_to_draft" string="Rollback to draft" type="object"
+                                class="btn-secondary" groups="cratle_customs.group_administrators"
+                                attrs="{'invisible':[('state', 'in', ('new','draft'))]}"/>
                          <field name="state" widget="statusbar" statusbar_visible="draft,post,sent"/>
                	    </header>
 	            	<div class="oe_title">
@@ -44,30 +49,41 @@
                         </h1>
                     </div>
                     <group colspan="4" col="4">
-                    	<field name="consignor_id" required="1" attrs="{'readonly': [('state', 'in', ('sent','post'))]}"/>
-                    	<field name="consignee_id" required="1" attrs="{'readonly': [('state', 'in', ('sent','post'))]}"/>
-                    	<field name="incoterm_id" attrs="{'readonly': [('state', 'in', ('sent','post'))]}"/>
-                    	<field name="goods_port" widget="radio" options="{'horizontal': true}" attrs="{'readonly': [('state', 'in', ('sent','post'))]}"/>
-                    	<field name="invoice_cost" attrs="{'readonly': [('state', 'in', ('sent','post'))]}"/>
-                    	<field name="invoice_currency_id" attrs="{'readonly': [('state', 'in', ('sent','post'))]}"/>
-                    	<field name="shipping_cost" attrs="{'invisible':  [('show_shipping_cost', '=', False)], 'readonly': [('state', 'in', ('sent','post'))]}"/>
-                    	<field name="shipping_currency_id" attrs="{'invisible':  [('show_shipping_cost', '=', False)], 'readonly': [('state', 'in', ('sent','post'))]}"/>
-                    	<field name="transport_mode_id" options="{'no_create': True, 'no_create_edit': True}" attrs="{'readonly': [('state', 'in', ('sent','post'))]}"/>
-                    	<field name="transport_mode_border_id" options="{'no_create': True, 'no_create_edit': True}" attrs="{'readonly': [('state', 'in', ('sent','post'))]}"/>
-                    	<field name="uk_port" attrs="{'readonly': [('state', 'in', ('sent','post'))]}"/>
+                        <field name="consignor_id" required="1"
+                               attrs="{'readonly': [('state', 'in', ('sent','post'))]}"/>
+                        <field name="consignee_id" required="1"
+                               attrs="{'readonly': [('state', 'in', ('sent','post'))]}"/>
+                        <field name="incoterm_id" attrs="{'readonly': [('state', 'in', ('sent','post'))]}"/>
+                        <field name="goods_port" widget="radio" options="{'horizontal': true}"
+                               attrs="{'readonly': [('state', 'in', ('sent','post'))]}"/>
+                        <field name="invoice_cost"
+                               attrs="{'invisible': [('show_import_fields', '=', False)], 'readonly': [('state', 'in', ('sent','post'))]}"/>
+                        <field name="invoice_currency_id"
+                               attrs="{'invisible': [('show_import_fields', '=', False)], 'readonly': [('state', 'in', ('sent','post'))]}"/>
+                        <field name="shipping_cost"
+                               attrs="{'invisible':  ['|',('show_import_fields', '=', False),('show_shipping_cost', '=', False)], 'readonly': [('state', 'in', ('sent','post'))]}"/>
+                        <field name="shipping_currency_id"
+                               attrs="{'invisible':  ['|',('show_import_fields', '=', False),('show_shipping_cost', '=', False)], 'readonly': [('state', 'in', ('sent','post'))]}"/>
+                        <field name="transport_mode_id" options="{'no_create': True, 'no_create_edit': True}"
+                               attrs="{'readonly': [('state', 'in', ('sent','post'))]}"/>
+                        <field name="transport_mode_border_id" options="{'no_create': True, 'no_create_edit': True}"
+                               attrs="{'readonly': [('state', 'in', ('sent','post'))]}"/>
+                        <field name="uk_port" attrs="{'readonly': [('state', 'in', ('sent','post'))]}"/>
                     </group>
-                    
-                    <group colspan="4" col="4" name="calculate_value" string="Calculated Values">
+
+					<separator string="Declaration MetaData" colspan="4"/>
+                    <group colspan="4" col="4" name="calculate_value" style="background-color:#CAC0BE">
                     	<field name="ducr" readonly="1"/>
-                    	<field name="number_of_item" attrs="{'readonly': [('state', 'in', ('sent','post'))]}"/>
-                    	<field name="number_of_package" attrs="{'readonly': [('state', 'in', ('sent','post'))]}"/>
+                    	<field name="number_of_item" attrs="{'readonly': [('state', 'in', ('sent','post'))]}" style="background-color:#CAC0BE;border:thin none"/>
+                    	<field name="number_of_package" attrs="{'readonly': [('state', 'in', ('sent','post'))]}" style="background-color:#CAC0BE;border:thin none"/>
                     	<field name="dec_type" force_save="1" readonly="1"/>
                     	<field name="show_shipping_cost" invisible="1"/>
+                        <field name="show_import_fields" invisible="1"/>
                     </group>
 	            </form>
 	        </field>
 	    </record>
-        
+
         <!-- ====================== Declaration Action==================== -->
 		<!-- <record id="action_declaration" model="ir.actions.act_window">
 	        <field name="name">Declarations</field>
@@ -78,7 +94,7 @@
 	        <field name="context"></field>
 			<field name="domain"></field>
 	    </record>
- -->	    
+ -->
 	    <!-- ====================== Draft Declaration Action==================== -->
 		<record id="action_draft_declaration" model="ir.actions.act_window">
 	        <field name="name">Draft Declarations</field>
@@ -89,8 +105,8 @@
 	        <field name="context"></field>
 			<field name="domain">[('state','=','draft')]</field>
 	    </record>
-	    
-	    <!-- ====================== Draft Declaration Action==================== -->
+
+	    <!-- ====================== Posted Declaration Action==================== -->
 		<record id="action_posted_dec" model="ir.actions.act_window">
 	        <field name="name">Posted Declarations</field>
 	        <field name="type">ir.actions.act_window</field>

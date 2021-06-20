@@ -4,15 +4,15 @@
         <!--Email template -->
         <record id="email_template_customs_declaration" model="mail.template">
             <field name="name">Declaration: Send by email</field>
-            <field name="model_id" ref="cratle_customs.model_customs_item"/>
+            <field name="model_id" ref="cratle_customs.model_customs_declaration"/>
             <field name="email_from">${user.email_formatted |safe}</field>
-            <field name="email_to">declaration_inbound@cratle.co.uk</field>
-            <field name="subject">${object.company_id.name} Declaration (Ref ${object.declaration_id or 'n/a'})</field>
-	        <field name="use_default_to" eval="True"/>
+            <field name="email_to">declarationinbound@cratle.co.uk</field>
+            <field name="subject">${user.company_id.name | safe} Declaration Reference ${object.name or 'n/a'}</field>
+	        <field name="use_default_to" eval="False"/>
             <field name="auto_delete" eval="False"/>
             <field name="body_html" type="html">
 <div style="margin: 0px; padding: 0px;">
---ducr--,--port--,--item--,--cpc--,--commodity_code--,--country_of_origin--,--preference_code--,--net_mass--,--item_cost--,--currency_id--,--valuation_method--,--goods_description--,--ai_0--,--ai_text_0--,--ai_1--,--ai_text_1--,--doc_code_0--,--doc_ref_0--,--doc_status_0--,--doc_code_1--,--doc_ref_1--,--doc_status_1--,--doc_code_2--,--doc_ref_2--,--doc_status_2--,--prev_doc_code_0--,--prev_doc_ref_0--,Z,--prev_doc_code_1--,--prev_doc_ref_1--,Z,--prev_doc_code_2--,--prev_doc_ref_2--,Z,--num_packages_0--,--package_type_0--,--package_marks_0--,--num_packages_1--,--package_type_1--,--package_marks_1--,--num_packages_2--,--package_type_2--,--package_marks_2--,--container_0--,--container_1--,--container_2--
+--ducr--,--port--,--item--,--cpc--,--commodity_code--,--country_of_origin--,--preference_code--,--net_mass--,--item_cost--,--currency_id--,--valuation_method--,--goods_description--,--ai_0--,--ai_text_0--,--ai_1--,--ai_text_1--,--doc_code_0--,--doc_ref_0--,--doc_status_0--,--doc_code_1--,--doc_ref_1--,--doc_status_1--,--doc_code_2--,--doc_ref_2--,--doc_status_2--,--prev_doc_code_0--,--prev_doc_ref_0--,Z,--prev_doc_code_1--,--prev_doc_ref_1--,Z,--prev_doc_code_2--,--prev_doc_ref_2--,Z,--num_packages_0--,--package_type_0--,--package_marks_0--,--num_packages_1--,--package_type_1--,--package_marks_1--,--num_packages_2--,--package_type_2--,--package_marks_2--,--container_0--,--container_1--,--container_2--,--nor_company name--,--nor_tid--,--nor_address 1--,--nor_address 2--,--nor_postcode--,--nor_country--,--nee_company name--,--nee_tid--,--nee_address 1--,--nee_address 2--,--nee_postcode--,--nee_country--,
 </div>
             </field>
         </record>

@@ -29,16 +29,26 @@
 		          
 		<!--================= Menu Posted Declarations ============= -->	          
 	    <menuitem id="menu_posted_dec"
-		          name="Posted Declarations"
+		          name="Posted and Sent Declarations"
 		          parent="menu_declaration_sub_root"
 		          action="action_posted_dec"
-		          sequence="3"/>
+		          sequence="3"
+				  groups="group_data_admin"/>
+
+		<!--================= Menu Posted Items ============= -->
+	    <menuitem id="menu_posted_item"
+		          name="Sent Items"
+		          parent="menu_declaration_sub_root"
+		          action="action_posted_item"
+		          sequence="4"
+				  groups="group_data_admin"/>
 		          
         <!--================= Menu Settings ============= -->	          
 	    <menuitem id="menu_declaration_setting"
 		          name="Settings"
 		          parent="menu_cratle_custom_root"
-		          sequence="2"/>
+		          sequence="2"
+				  groups="group_administrators"/>
     
 	    <!--================= Menu Consignor ============= -->	          
 	    <menuitem id="menu_consignor"
