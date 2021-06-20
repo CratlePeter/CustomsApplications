@@ -8,8 +8,8 @@
     'summary'    : 'Declare items to UK customs',
     'website'    : 'http://customs.cratle.co.uk', 
     'email'      : 'contact@cratle.co.uk',
-    'price'      : 60,
-    'currency'   : 'GBP',
+    'price'      : 70,
+    'currency'   : 'EUR',
     'maintainer' : "ERPcaLL Solutions",
     'description': """
     Declare imports and exports to UK customs through the Cratle customs broker.
