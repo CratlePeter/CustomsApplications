@@ -45,5 +45,5 @@
     'installable': True,
     'auto_install': False,
     'application': True,
-    'licence': 'GPL-3'  
+    'licence': 'AGPL-3'  
 }
