@@ -3,15 +3,17 @@
 {
     'name'       : 'Cratle Customs Declarations',
     'author'     : 'Cratle Limited',
-    'version'    : '0.1',
+    'version'    : '13.0.0.1',
     'category'   : 'Operations/Customs',
     'summary'    : 'Declare items to UK customs',
     'website'    : 'http://customs.cratle.co.uk', 
     'email'      : 'contact@cratle.co.uk',
+    'price'      : 60,
+    'currency'   : 'GBP',
     'maintainer' : "ERPcaLL Solutions",
     'description': """
     Declare imports and exports to UK customs through the Cratle customs broker.
-        This Odoo module is a front-end to the Cratle declarations server.  If this is not installed then you can email declarations for processing.
+        This Odoo module is a front-end to the Cratle declarations server.  If this is not installed then the module will email declarations for processing.
 """,
     
     'depends'    : ['mail','contacts','base',],
