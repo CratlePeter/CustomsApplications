@@ -41,6 +41,11 @@
     
     'demo'       : [
                    ],
+    'images'     : [
+                    'static/description/banner.png',
+                    'static/description/icon.png',
+                    'static/description/favicon.png',
+                   ],
     
     'installable': True,
     'auto_install': False,
