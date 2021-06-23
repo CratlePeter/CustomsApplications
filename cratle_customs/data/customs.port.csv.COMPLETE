@@ -1,0 +1,267 @@
+id,code,name
+1,TRT,Althorpe
+2,BLY,Amble
+3,WAT,Appledore
+4,AVO,Avonmouth
+5,LON,"Baltic Wharf, Rochford"
+6,BAR,Barrow-In-Furness
+7,IMM,Barrow-On-Humber
+8,CDF,Barry Dock
+10,TRT,Beckingham
+11,BLY,Berwick
+12,WAT,Bideford
+13,LIV,Birkenhead
+14,BLY,Blyth
+15,BOS,Boston
+16,WAT,Bridgwater
+17,HUL,Bridlington
+18,WEY,Bridport
+19,COL,Brightlingsea
+20,PTB,Briton Ferry
+21,TNM,Brixham
+22,COL,Burnham-on-Crouch
+23,TRT,Burton Stather
+24,LLA,Caernarfon
+25,CDF,Cardiff
+26,FOY,Charlestown
+27,NPT,Chepstow
+28,COL,Colchester
+29,COW,Cowes
+30,TNM,Dartmouth
+31,DOV,Dover
+32,ELL,Ellesmere Port
+33,EXE,Exeter
+34,EXE,Exmouth
+35,FAL,Falmouth
+36,WTS,Faversham
+37,FXT,Felixstowe
+38,COL,Fingringhoe
+39,FIS,Fishguard
+40,FLE,Fleetwood
+41,TRT,Flixborough Wharf
+42,FOY,Fowey
+43,TRT,Gainsborough
+44,LIV,Garston
+45,HEY,Glasson Dock
+46,SSS,Gloucester
+47,GOO,Goole
+48,GTY,Great Yarmouth
+49,GRI,Grimsby
+50,TRT,Grove Wharves
+51,TRT,Guness Wharf
+52,HTP,Hartlepool
+53,HRH,Harwich
+54,HEY,Heysham
+55,LON,Holehaven
+56,HLD,Holyhead
+57,GOO,Howdendyke
+58,HUL,Hull
+59,IMM,Immingham
+60,IPS,Ipswich
+61,TRT,Keadby
+62,KLN,Kings Lynn
+63,HEY,Lancaster
+64,LON,Leigh-On-Sea
+65,SHO,Littlehampton
+66,LIV,Liverpool
+67,LLA,Llanddulas
+68,SWA,Llanelli
+69,LON,London
+70,LGP,London Gateway
+71,LOW,Lowestoft
+72,STN,Lymington
+73,COL,Maldon
+74,MNC,Manchester
+75,MED,Medway
+76,MID,Middlesbrough
+77,MIL,Milford
+78,BAR,Millom
+79,HRH,Mistley
+80,MOS,Mostyn
+81,TRT,Neap House
+82,PTB,Neath Abbey
+83,TYN,Newcastle
+84,NHV,Newhaven
+85,IMM,New Holland
+86,PEN,Newlyn
+87,NPT,"Newport, Gwent"
+88,TYN,North Shields
+89,NTH,Northwich
+90,NOR,Norwich
+91,PLY,Padstow
+92,PAR,Par
+93,HRH,Parkeston Quay
+94,MNC,Partington
+95,MIL,Pembroke Ferry
+96,MIL,Pembroke (Oils) So
+97,MIL,Pembroke Epu
+98,FAL,Penryn
+99,PEN,Penzance
+100,PLY,Plymouth
+101,TRT,Point Bid
+102,POO,Poole
+103,LLA,Port Penrhyn
+104,AVO,Portishead
+105,PTL,Portland
+106,PTM,Portsmouth
+107,PTB,Port Talbot
+108,MED,Queenborough
+109,RMG,Ramsgate
+110,MOS,Rhyl
+111,MED,Ridham Dock
+112,MED,Rochester
+113,LON,Rochford
+114,COL,Rowhedge
+115,AVO,Royal Portbury Dock
+116,RUN,Runcorn
+117,FOL,Rye
+118,SCA,Scarborough
+119,TRT,Scunthorpe
+120,SUN,Seaham
+121,GOO,Selby
+122,SSS,Sharpness
+123,MED,Sheerness
+124,SHO,Shoreham
+125,MOS,Shotton
+126,SIL,Silloth
+127,STN,Southampton
+128,LON,Southend (Corporation Jetty)
+129,TYN,South Shields
+130,SUN,Sunderland
+131,SWA,Swansea
+132,MID,Teesport
+133,TNM,Teignmouth
+134,LON,Tilbury
+135,TEP,Thames Europort
+136,THP,Thamesport
+137,EXE,Topsham
+138,TNM,Torquay
+139,TRT,Trent
+140,FAL,Truro
+141,TYN,Tyne
+142,RUN,Warrington
+143,WAT,Watchet
+144,NOR,Wells
+145,WEY,Weymouth
+146,WTB,Whitby
+147,WHV,Whitehaven
+148,WTS,Whitstable
+149,WIS,Wisbech
+150,COL,Wivenhoe
+151,WOR,Workington
+152,DGS,Castletown
+153,DGS,Douglas
+154,DGS,Peel
+155,DGS,Ramsey
+156,JSY,St Helier
+157,GSY,St Peter Port
+158,ABD,Aberdeen
+159,GRK,Annan
+160,DUN,Arbroath
+161,ARD,Ardrossan
+162,AYR,Ayr
+163,GRK,Barcaldine
+164,GRG,Braefoot Bay
+165,GLW,Bowling
+166,FRB,Buckie
+167,INV,Burghead
+168,GRG,Burntisland
+169,GRK,Campbeltown
+170,INV,"Corpach, Incl Annat Pier"
+171,DUN,Dundee
+172,GRK,Faslane
+173,GRK,Finnart
+174,FRB,Fraserburgh
+175,GRK,Furnace
+176,GRK,Garlieston
+177,AYR,Girvan
+178,GLW,Glasgow
+179,GRG,Grangemouth
+180,GRK,Greenock
+181,HPT,Hound Point Terminal
+182,GRK,Hunterston
+183,INV,Invergordon
+184,GRG,Inverkeithing
+185,INV,Inverness
+186,IRV,Irvine
+187,GRK,Islay
+188,KKD,Kirkcaldy
+189,KWL,Kirkwall
+190,LEI,Leith
+191,LER,Lerwick
+192,INV,Lochaline
+193,INV,Lossiemouth
+194,FRB,Macduff
+195,GRG,Methil
+196,MON,Montrose
+197,GRK,Oban
+198,GRK,Palnackie
+199,DUN,Perth
+200,PHD,Peterhead
+201,ROS,Rosyth
+202,LER,Scalloway
+203,INV,Scrabster
+204,STO,Stornoway
+205,GRK,Stranraer
+206,KWL,Stromness
+207,DUN,Tayport
+208,INV,Ullapool
+209,INV,Wick
+210,BEL,Belfast
+211,CLR,Coleraine
+212,BEL,Larne
+213,LDY,Londonderry
+214,CLR,Portrush
+215,WPT,Warrenpoint
+216,ABZ,Aberdeen Airport
+217,BFS,Belfast International Airport
+218,BQH,Biggin Hill Airport
+219,BHX,Birmingham Airport
+220,BLK,Blackpool International Airport
+221,BOH,Bournemouth (Hurn) Airport
+222,BRS,Bristol Airport
+223,CBG,Cambridge Airport
+224,CWL,Cardiff (Wales) Airport
+225,CVT,Coventry Airport
+226,MME,Durham Tees Valley (Teesside) Airport
+227,EMA,East Midlands Airport
+228,EDI,Edinburgh Airport
+229,EXT,Exeter Airport
+230,FAB,Farnborough Airport
+231,FZO,Filton Aerodrome (Bristol)
+232,GLA,Glasgow Airport
+233,HUY,Humberside International Airport
+234,LBA,Leeds Bradford Airport
+235,LPL,Liverpool John Lennon Airport
+236,LYD,London Ashford (Lydd) Airport
+237,LCY,London City Airport
+238,LGW,London Gatwick Airport
+239,LHR,London Heathrow Airport
+240,LTN,London Luton Airport
+241,LSA,London Stansted Airport
+242,MAN,Manchester Airport
+243,MSE,Manston Airport
+244,NCL,Newcastle Airport
+245,NQY,Newquay Airport
+246,NWI,Norwich Airport
+247,PLH,Plymouth Airport
+248,PIK,Prestwick Airport
+249,RWY,Ronaldsway Airport (Isle of Man)
+250,ESH,Shoreham Airport
+251,SOU,Southampton (Eastleigh) Airport
+252,SEN,Southend Airport
+253,LSI,Sumburgh Airport (Shetland)
+254,ASD,Ashford
+255,LBK,Barking
+256,DAG,Dagenham
+257,DVY,Daventry
+258,NGO,Dollands Moor
+259,KMK,Irvine
+260,SCP,Scunthorpe
+261,WDN,Widnes
+262,DEU,Dover / Eurotunnel
+263,EUT,Eurotunnel
+264,HRH,Harwich International Port
+265,KIL,Killingholme
+266,MIL,Pembroke
+267,PUF,Purfleet
