@@ -6,7 +6,7 @@
 	        <field name="name">box.type.tree</field>
 	        <field name="model">customs.box.type</field>
 	        <field name="arch" type="xml">
-	            <tree string="Box Type" editable="top">
+	            <tree string="Box Type">
 	                <field name="code"/>
 			<field name="name"/>
 	            </tree>
@@ -28,7 +28,7 @@
 	        <field name="name">customs.ai.codes.tree</field>
 	        <field name="model">customs.addinfocodes</field>
 	        <field name="arch" type="xml">
-	            <tree string="AI Codes" editable="top">
+	            <tree string="AI Codes">
 	                <field name="name"/>
 	            </tree>
 	        </field>
@@ -50,7 +50,7 @@
 	        <field name="name">incoterm.tree</field>
 	        <field name="model">customs.incoterm</field>
 	        <field name="arch" type="xml">
-	            <tree string="Incoterm" editable="top">
+	            <tree string="Incoterm">
 	                <field name="name"/>
 	                <field name="show_shipping_cost"/>
 	            </tree>
@@ -72,7 +72,7 @@
 	        <field name="name">transport.mode.tree</field>
 	        <field name="model">customs.transport.mode</field>
 	        <field name="arch" type="xml">
-	            <tree string="Transport Mode Inland" editable="top">
+	            <tree string="Transport Mode Inland">
 	                <field name="name"/>
 	            </tree>
 	        </field>
@@ -93,7 +93,7 @@
 	        <field name="name">document.code.tree</field>
 	        <field name="model">customs.document.code</field>
 	        <field name="arch" type="xml">
-	            <tree string="Document Code" editable="top">
+	            <tree string="Document Code">
 			<field name="code"/>
 	                <field name="name"/>
 			<field name="type_of_declaration"/>
@@ -118,7 +118,7 @@
 	        <field name="name">previous.document.code.tree</field>
 	        <field name="model">customs.previous.document</field>
 	        <field name="arch" type="xml">
-	            <tree string="Previous Document Code" editable="top">
+	            <tree string="Previous Document Code">
 	                <field name="code"/>
 					<field name="name"/>
 	            </tree>
@@ -162,7 +162,7 @@
 	        <field name="name">cpc.tree</field>
 	        <field name="model">customs.procedure</field>
 	        <field name="arch" type="xml">
-	            <tree string="Customs Procedure Code" editable="top">
+	            <tree string="Customs Procedure Code">
 	                <field name="code"/>
 					<field name="name"/>
 					<field name="type"/>
@@ -185,7 +185,7 @@
 	        <field name="name">preference.tree</field>
 	        <field name="model">customs.preference.code</field>
 	        <field name="arch" type="xml">
-	            <tree string="Types of Preference" editable="top">
+	            <tree string="Types of Preference">
 	                <field name="code"/>
 					<field name="name"/>
 					<field name="description"/>
@@ -208,7 +208,7 @@
 	        <field name="name">docstatus.tree</field>
 	        <field name="model">customs.document.status</field>
 	        <field name="arch" type="xml">
-	            <tree string="Document status" editable="top">
+	            <tree string="Document status">
 	                <field name="code"/>
 					<field name="description"/>
 	            </tree>
@@ -220,7 +220,7 @@
 	        <field name="type">ir.actions.act_window</field>
 	        <field name="res_model">customs.document.status</field>
 	        <field name="view_mode">tree</field>
-	        <field name="search_view_id" ref="preference_view_tree"/>
+	        <field name="search_view_id" ref="docstatus_view_tree"/>
 	        <field name="context"></field>
 			<field name="domain"></field>
 	    </record>

@@ -1,40 +1,20 @@
-code,type_of_declaration,declaration_level,name,details
-9001,Both,Item,"Declaration of preferential origin on an invoice or other commercial document bearing as appropriate an original signature or approval number of the exporter
-See also: Y019 where the declaration shows that the goods originate in Iceland; Y020 where the declaration shows that the goods originate in Norway; and Y021 where the document shows that goods originate in the EEA.","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB.  Also insert the invoice number(s)."
-9004,Import,Item,Certificates of origin for steel quotas.,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US, XA, XB Reference details: Enter GBAOG followed by its number."
-9005,Import,Item,"All import documents (including Department of Health) licences, permits or certificates other than those specifically identified by other document codes","With the exception of FP, HP, the U series and XF, enter the appropriate status code listed in document status codes for harmonised declarations"
-9100,Import,Item,"Firearms: Open Individual Licence or Firearms: Specific Individual Licence Nuclear Materials: Open Individual Licence Nuclear Materials: Specific Individual Licence","With the exception of FP, HP, IA, IE, IP, IS, SP, TP, XB, XF, XU, XW, enter appropriate status code listed in document status codes for harmonised declarations."
-9101,Import,Item,Chemical weapons: pre-cursor chemicals,"With the exception of FP, HP, IA, IE, IP, IS, SP, TP, XB, XF, XU, XW, enter appropriate status code listed in document status codes for harmonised declarations."
-9102,Import,Item,"Standard Individual Transhipment Licence Open General Transhipment Licence","Use one of the following status codes (see document status codes for harmonised declarations for definitions): AF, AP, AT, GE, GP, LE, LP, XX."
-9103,Import,Item,"Detonation Resistance Test (DRT) HSE Certificate of Exemption","Insert any status code except those in the E, I or U series."
-9104,Export,Item,"Standard Individual Export Licence: Military Goods and dual use goods subject to UK export controls                                                                                                                                                                Global Project Licence Standard Individual Transhipment Licence Open Individual Export Licence: military or dual use goods subject to national control Open General Export Licence (Military Goods) or dual use goods subject to national control Open General Transhipment Licence","With the exception of AG, AS, EL, IE, IS, JE, JS, UE, UP, US, XB, XF, XU, enter appropriate status code listed in document status codes for harmonised declarations.  For supplementary declarations use EA, IA, JA or UA as appropriate (see document status codes for harmonised declarations for definitions)."
-9105,Export,Item,"Standard Individual Export Licence: radioactive sources Open Individual Export Licence: radioactive sources Open General Export Licence: radioactive sources","With the exception of AG, AS, EL, IE, IS, JE, JS, UE, UP, US, XB, XF, XU, enter appropriate status code listed in document status codes for harmonised declarations.  For supplementary declarations use EA, IA, JA or UA as appropriate (see document status codes for harmonised declarations for definitions)."
-9106,Export,Item,Authorisation for torture goods,"With the exception of AG, AS, EL, IE, IS, JE, JS, UE, UP, US, XB, XF, XU, enter appropriate status code listed in document status codes for harmonised declarations.  For supplementary declarations use EA, IA, JA or UA as appropriate (see document status codes for harmonised declarations for definitions)."
-9107,Export,Item,"UK Standard Individual Export Licence (Form C). Objects of cultural interest (Control) Order UK Open General Export Licence UK Open Individual Export Licence","With the exception of EA, EE, EL, EP, ES, XB enter appropriate status code listed in document status codes for harmonised declarations."
-9108,Export,Item,"EU Specific Open Licence EU General Open Licence","With the exception of EA, EE, EL, EP, ES, XB enter appropriate status code listed in document status codes for harmonised declarations."
-9111,Both,Item,Home Office open individual licence for drugs precursor chemicals,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): FP, XX."
-9112,Both,Item,Drugs Precursor Chemicals Individual Licence,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AT XX – Ex-heading  goods for which the document does not apply"
-9113,Both,Item,Controlled Drugs Individual Licence,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE – Document attached – exhausted by this entry XX – Ex-heading  goods for which the document does not apply"
-9114,Both,Item,Controlled Drugs Open Individual Licence,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): FP – Facsimile  attached – part use XX – Ex-heading  goods for which the document does not apply"
-9115,Import,Item,Quarantine Release Certificate,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AG, AP, AS, JE, JP, JS, XA or XX."
-9116,Import,Item,Rabies Import Licence,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, XX."
-9117,Import,Item,Fera Letter of Authority,"AG, AP, JE, JP"
-9118,Import,Item,Import permit for harp and hooded seal skins,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AP, AS, AT, XX."
-9119,Import,Item,Letter headed licence for importation  of hares,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, XX."
-9120,Import,Item,Importation of animal pathogens licence under the Importation of Animal Pathogens Order 1980 (IAPO),"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AC, AE, AF, AG, AP, AS, AT, XX."
-9121,Import,Item,DEFRA or Animal Health import licence/authorisation for products of animal origin,"Use one of the following status codes (see document status codes for harmonised declarations for definitions): AE, AF, AG, AP, AS, AT, IA, IE, IP, IS and XX."
-U112,Both,Both,Preference based on importers knowledge ,This code must be declared with status code JP
-U113,Both,Both,Statement on origin made out by a Registered Exporter in the framework of OAD for a total value of originating products consigned not exceeding 10000 Euros,"This code must be declared with one of these status codes AE, AF, AG, AP, AS, AT, GE, GP, HP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB and the commercial document reference number. "
-U114,Both,Both,Statement on Origin made out by a Registered Exporter in the framework of OAD for a total value of originating products consigned exceeding 10000 Euros.,"This code must be declared with one of these status codes AE, AF, AG, AP, AS, AT, GE, GP, HP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB and the commercial document reference number."
-U115,Both,Both,Statement on origin made out by a Non-Registered Exporter in the framework of OAD for a total value of originating products consigned not exceeding 10000 Euros.,"This code must be declared with one of these status codes AE, AF, AG, AP, AS, AT, GE, GP, HP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB and the commercial document reference number.  In the UK Forms C105B and C109B support Valuation Methods 2, C109B forms are registered with HMRC and a GVS reference allocated.
+id,code,type_of_declaration,declaration_level,name,details
+1,U110,Both,Both,"Preference based on a statement on origin for single shipment
+","This code must be declared with one of these status codes AE, AF, AG, AP, AS, AT, GE, GP, HP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB and the commercial document ref
+erence number.",
+2,U111,Both,Both,Preference based on statement on origin for multiple shipments of identical products ,"This codes must be declared with one of these status codes AE, AF, AG, AP, AS, AT, GE, GP, HP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB and the commercial document reference number.",
+3,U112,Both,Both,Preference based on importers knowledge ,This code must be declared with status code JP
+4,U113,Both,Both,Statement on origin made out by a Registered Exporter in the framework of OAD for a total value of originating products consigned not exceeding 10000 Euros,"This code must be declared with one of these status codes AE, AF, AG, AP, AS, AT, GE, GP, HP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB and the commercial document reference number. "
+5,U114,Both,Both,Statement on Origin made out by a Registered Exporter in the framework of OAD for a total value of originating products consigned exceeding 10000 Euros.,"This code must be declared with one of these status codes AE, AF, AG, AP, AS, AT, GE, GP, HP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB and the commercial document reference number."
+6,U115,Both,Both,Statement on origin made out by a Non-Registered Exporter in the framework of OAD for a total value of originating products consigned not exceeding 10000 Euros.,"This code must be declared with one of these status codes AE, AF, AG, AP, AS, AT, GE, GP, HP, JE, JP, LE, LP, UA, UE, UP, US, XA, XB and the commercial document reference number.  In the UK Forms C105B and C109B support Valuation Methods 2, C109B forms are registered with HMRC and a GVS reference allocated.
 EP                                                   C109B registered with Customs  (GVS
 AE                                                   C105B to be produced on request
 XF                                                   C105B to be produced on request on
 a - 'B' for a C109B
 n - a digit
 There is no formal reference for a C105B. Declarant has the option to enter a reference."
-C100,Both,Item,Registered Exporter (REX) Number,Document status code will be RE.,
-N934,Import,Item,"Declaration of particulars relating to Valuation Method 1.
+7,C100,Both,Item,Registered Exporter (REX) Number,Document status code will be RE.,
+8,N934,Import,Item,"Declaration of particulars relating to Valuation Method 1.
 In the UK Forms C105A and C109A support Valuation Method 1. C109A forms are registered with HMRC and a GVS reference allocated.
 
 Status Code                                  Meaning
@@ -51,4 +31,4 @@ XU                                                   C105A to be produced (Bulk 
 a - 'A' for a C109A
 n - a digit
 There is no formal reference for a C105A. Declarant has the option to enter a reference."
-N935,Import,Item,The invoice on the basis of which the customs value of the goods is declared,"Only status codes AC is permitted (see document status codes for harmonised declarations for definitions)."
+9,N935,Import,Item,The invoice on the basis of which the customs value of the goods is declared,"Only status codes AC is permitted (see document status codes for harmonised declarations for definitions)."
