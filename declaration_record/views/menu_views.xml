@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+	    <!--================= Menu Declaration Record Root============= -->	          
+	    <menuitem id="menu_declaration_record_root"
+		          name="Declaration Record"
+		          web_icon="erpcall_v13_declaration_record,static/description/favicon.png"
+		          sequence="10"/>
+				          
+		<!--================= Sub Menu Declaration Record ============= -->	          
+	    <menuitem id="sub_menu_declaration_record"
+		          name="Declaration Record"
+		          parent="menu_declaration_record_root"
+		          sequence="1"/>
+		          
+		<!--================= Menu Declarations Record ============= -->	          
+	    <menuitem id="menu_declaration_record"
+		          name="Declaration Record"
+		          parent="sub_menu_declaration_record"
+		          action="action_declaration_record"
+		          sequence="1"/>
+		          
+		<!--================= Menu Configuration ============= -->	          
+	    <menuitem id="sub_menu_configuration"
+		          name="Configuration"
+		          parent="menu_declaration_record_root"
+		          sequence="2"/>
+		          
+		<!--================= Menu Configuration ============= -->
+	    <menuitem id="sub_menu_configuration_templates"
+		          name="Email Templates"
+		          parent="sub_menu_configuration"
+		          sequence="2"/>
+
+		<!--================= Menu Response Email ============= -->
+	    <menuitem id="menu_response_email"
+		          name="Response Email"
+		          parent="sub_menu_configuration_templates"
+		          action="action_response_email_template"
+		          sequence="1"/>
+		          
+		<!--================= Menu Border Crossing Email ============= -->	          
+	    <menuitem id="menu_border_crossing_email"
+		          name="Border Crossing Email"
+		          parent="sub_menu_configuration_templates"
+		          action="action_border_crossing_email"
+		          sequence="2"/>
+		          
+		<!--================= Menu Owner Email ============= -->	          
+	    <menuitem id="menu_owner_email"
+		          name="Owner Email"
+		          parent="sub_menu_configuration_templates"
+		          action="action_owner_email"
+		          sequence="3"/>
+		          
+		
+		          
+    
+
+	</data>
+
+</odoo>

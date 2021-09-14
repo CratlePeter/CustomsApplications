@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+
+		<!-- ====================== Declaration Record Tree View==================== -->
+		<record id="declaration_record_view_tree" model="ir.ui.view">
+			<field name="name">declaration.record.tree</field>
+			<field name="model">declaration.record</field>
+			<field name="arch" type="xml">
+				<tree string="Declaration Record">
+					<field name="type" optional="show" />
+					<field name="owner_id" optional="show"/>
+					<field name="requestor_id" optional="show"/>
+					<field name="name" optional="show" />
+					<field name="entry_no"/>
+					<field name="mrn"/>
+					<field name="doe"/>
+					<field name="ecd"/>
+				</tree>
+			</field>
+		</record>
+
+		<!-- ====================== Declaration Record Form View==================== -->
+		<record id="declaration_record_view_form" model="ir.ui.view">
+			<field name="name">declaration.record.form</field>
+			<field name="model">declaration.record</field>
+			<field name="arch" type="xml">
+				<form string="Declaration Record">
+					<header>
+						<button name="action_email_requestor" string="Email requestor" type="object" class="btn-primary"/>
+						<button name="action_email_owner" string="Email owner" type="object" class="btn-primary"/>
+					</header>
+					<sheet>
+						<div class="oe_title">
+							<field name="type" widget="radio" class="oe_edit_only" options="{'horizontal': true}"/>
+						</div>
+						<group colspan="4" col="6" string="References">
+							<field name="name"/>
+							<field name="mrn"/>
+							<field name="internal_ref"/>
+							<field name="their_reference"/>
+						</group>
+						<group colspan="4" col="6" string="CHIEF references">
+							<field name="epu"/>
+							<field name="entry_no"/>
+							<field name="doe"/>
+						</group>
+						<group colspan="4" col="2" string="Who requested the declaration">
+							<field name="requestor_id"/>
+							<field name="cc_list"/>
+							<field name="response_id" domain="[('mail_template_type', '=', 'response')]" context="{'default_type': 'response'}" string="Email response template"/>
+							<field name="ecd"/>
+							<field name="border_crossing_id" domain="[('mail_template_type', '=', 'border_crossing')]" context="{'default_type': 'border_crossing'}" string="Border Crossing check template"/>
+						</group>
+					  <group colspan="4" col="2" string="Who is the legal owner">
+							<field name="owner_id"/>
+							<field name="owner_cc"/>
+							<field name="owner_mail_id" domain="[('mail_template_type', '=', 'owner')]" context="{'default_type': 'owner'}" string="Template to use"/>
+						</group>
+						<group colspan="4" col="2" string="Document upload">
+							<field name="attachment_ids" widget="many2many_binary"/>
+							<!-- <field name="attachment_type" widget="radio" class="oe_edit_only" options="{'horizontal': true}"/> -->
+						</group>
+						
+						<notebook>
+							<page name="email_history" string="Email History">
+								<field name="message_line">
+									<tree editable="bottom">
+										<field name="date"/>
+										<field name="author_id"/>
+										<field name="partner_ids" widget="many2many_tags" string="Requestor"/>
+										<field name="subject"/>
+										<field name="body"/>
+									</tree>
+								</field>
+							</page>
+						</notebook>
+						
+					</sheet>
+
+
+				</form>
+			</field>
+		</record>
+
+
+		<!-- ====================== Declaration Record Action==================== -->
+		<record id="action_declaration_record" model="ir.actions.act_window">
+			<field name="name">Declaration Record</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">declaration.record</field>
+			<field name="view_mode">tree,form</field>
+			<field name="search_view_id" ref="declaration_record_view_tree" />
+			<field name="context"></field>
+			<field name="domain"></field>
+		</record>
+		
+		<!-- ======================Response Email Action==================== -->
+		<record id="action_response_email_template" model="ir.actions.act_window">
+			<field name="name">Response Email</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">mail.template</field>
+			<field name="view_mode">tree,form</field>
+			<field name="search_view_id" ref="mail.email_template_tree" />
+			<field name="context">{'default_mail_template_type': 'response'}</field>
+			<field name="domain">[('mail_template_type', '=', 'response')]</field>
+		</record>
+		
+		<!-- ======================Border Crossing Email Action==================== -->
+		<record id="action_border_crossing_email" model="ir.actions.act_window">
+			<field name="name">Border Crossing Email</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">mail.template</field>
+			<field name="view_mode">tree,form</field>
+			<field name="search_view_id" ref="mail.email_template_tree" />
+			<field name="context">{'default_mail_template_type': 'border_crossing'}</field>
+			<field name="domain">[('mail_template_type', '=', 'border_crossing')]</field>
+		</record>
+		
+		<!-- ======================Owner Email Action==================== -->
+		<record id="action_owner_email" model="ir.actions.act_window">
+			<field name="name">Owner Email</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">mail.template</field>
+			<field name="view_mode">tree,form</field>
+			<field name="search_view_id" ref="mail.email_template_tree" />
+			<field name="context">{'default_mail_template_type': 'owner'}</field>
+			<field name="domain">[('mail_template_type', '=', 'owner')]</field>
+		</record>
+
+
+	</data>
+</odoo>
