@@ -7,7 +7,7 @@
 			<field name="name">declaration.record.tree</field>
 			<field name="model">declaration.record</field>
 			<field name="arch" type="xml">
-				<tree string="Declaration Record">
+				<tree string="Declaration Record" default_order="ecd" decoration-danger="state=='prelodged'" decoration-info="state=='arrived'" decoration-muted="state=='invoiced'">
 					<field name="type" optional="show" />
 					<field name="owner_id" optional="show"/>
 					<field name="requestor_id" optional="show"/>
@@ -16,6 +16,7 @@
 					<field name="mrn"/>
 					<field name="doe"/>
 					<field name="ecd"/>
+					<field name="state"/>
 				</tree>
 			</field>
 		</record>
@@ -29,6 +30,7 @@
 					<header>
 						<button name="action_email_requestor" string="Email requestor" type="object" class="btn-primary"/>
 						<button name="action_email_owner" string="Email owner" type="object" class="btn-primary"/>
+						<field name="state" widget="statusbar" clickable="1"/>
 					</header>
 					<sheet>
 						<div class="oe_title">
@@ -91,8 +93,8 @@
 			<field name="res_model">declaration.record</field>
 			<field name="view_mode">tree,form</field>
 			<field name="search_view_id" ref="declaration_record_view_tree" />
-			<field name="context"></field>
-			<field name="domain"></field>
+			<field name="context">{}</field>
+			<field name="domain">[('state', '!=', 'invoiced')]</field>
 		</record>
 		
 		<!-- ======================Response Email Action==================== -->

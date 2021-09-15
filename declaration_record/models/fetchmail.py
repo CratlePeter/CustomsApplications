@@ -42,6 +42,7 @@ class FetchmailServer(models.Model):
 
                     # Parse the message given the different types
                     dr_type = "import"
+                    dr_state = "new"
                     if 'IMPORT PRE-LODGEMENT ADVICE' in message_in_attachment or \
                             'EXPORT ENTRY ACCEPTANCE ADVICE' in message_in_attachment or \
                             'IMPORT ENTRY ACCEPTANCE ADVICE' in message_in_attachment:
@@ -63,6 +64,10 @@ class FetchmailServer(models.Model):
                                                message_line.find('Declarant reference') + 22:].strip()
                             if 'MRN' in message_line:
                                 mrn = message_line[message_line.find('MRN') + 13:].strip()
+                            if 'IMPORT PRE-LODGEMENT ADVICE' in message_line:
+                                dr_state = 'prelodged'
+                            if 'IMPORT ENTRY ACCEPTANCE ADVICE' in message_line or 'EXPORT ENTRY ACCEPTANCE ADVICE' in message_line:
+                                dr_state = 'arrived'
                     _logger.debug('MRN: %s,DRef: %s, DUCR: %s, EPU: %s, Entry %s, DoE %s', mrn, dr_reference, dr_ducr,
                                   dr_epu, dr_entry, dr_doe)
 
@@ -89,6 +94,10 @@ class FetchmailServer(models.Model):
                 declaration_record_id.mrn = mrn
                 declaration_record_id.internal_ref = dr_reference
 
+            # Update the state of the declaration based on the document type from CHIEF
+            if declaration_record_id.state not in ('arrived','invoiced'):
+                declaration_record_id.state = dr_state
+
             message_id.declaration_email_message_id = declaration_record_id.id
             if message_id.attachment_ids:
                 _logger.debug('adding email attachments to d_r %s', declaration_record_id)
@@ -101,8 +110,8 @@ class FetchmailServer(models.Model):
             declaration_record_id.attachment_ids = [(6, 0, existing_attachments)]
 
             # If we're using the new declaration_record then the ids will be the same
+            # so if the IDs are different then delete the declaration_record that was created automatically
             if declaration_record_id != dr_to_be_deleted:
-                # Delete the declaration_record that was created automatically
                 _logger.debug ('attaching the mail message to declaration %s', declaration_record_id)
                 message_id.sudo().write({'res_id':declaration_record_id.id})
                 _logger.debug ('Removing declaration_record with id %s', dr_to_be_deleted)

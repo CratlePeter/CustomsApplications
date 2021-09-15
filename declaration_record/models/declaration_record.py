@@ -15,7 +15,7 @@ class DeclarationRecord(models.Model):
 
     type = fields.Selection(selection=[('import', 'Import'),
                                        ('export', 'Export'),
-                                       ('transit', 'Transit'),], string='Type')
+                                       ('transit', 'Transit'),], string='Type', default='import')
 
     name = fields.Char(string="DUCR")
     epu = fields.Char(string="EPU")
@@ -42,6 +42,11 @@ class DeclarationRecord(models.Model):
 
     message_line = fields.One2many('mail.message', 'declaration_email_message_id', string="History Line")
 
+    state = fields.Selection(selection=[('new', 'New'),
+                                        ('prelodged', 'Pre-lodged'),
+                                        ('arrived', 'Arrived'),
+                                        ('invoiced', 'Invoiced')], default='new', string='State')
+
     def border_crossing_email(self):
         today = fields.Date.today()
         declaration_record_objs = self.env['declaration.record'].search([('ecd', '=', today)])
@@ -56,21 +61,8 @@ class DeclarationRecord(models.Model):
 
     def send_email (self, party_to_send_to, cc_list, template_to_use, message_subtype):
         mail_values = template_to_use.generate_email(self.id)
-        mail_values['attachment_ids'] = [(6, 0, self.attachment_ids.ids)]
         subtype = self.env['mail.message.subtype'].search([('name', '=', message_subtype)],
                                                                                limit=1)
-        # Tidy up cc_list before adding it into the mail_values array
-        if len(cc_list) > 0:
-            cc_split = cc_list.split(';')
-            if len(cc_split) == 1 and cc_list.find(',',2)>0:
-                cc_split = cc_list.split(',')
-
-            for i, cc in enumerate(cc_split):
-                cc_split[i] = tools.email_normalize(cc)
-
-            cc_list = ','.join(cc_split)
-            mail_values['email_cc'] = cc_list
-
 
         # Create a message so that it's available in the history
         message_id = self.env['mail.message'].create({
@@ -85,8 +77,28 @@ class DeclarationRecord(models.Model):
             'declaration_email_message_id': self.id,
         })
 
-        # Create and queue the email for sending using the values from the mail.message
+        # We will create an email based on this message
         mail_values['mail_message_id'] = message_id.id
+
+        # Set up the recipients
+        mail_values['recipient_ids'] = [(6, 0, party_to_send_to.ids)]
+
+        # Tidy up cc_list before adding it into the mail_values list
+        if cc_list and len(cc_list) > 0:
+            cc_split = cc_list.split(';')
+            if len(cc_split) == 1 and cc_list.find(',',2)>0:
+                cc_split = cc_list.split(',')
+
+            for i, cc in enumerate(cc_split):
+                cc_split[i] = tools.email_normalize(cc)
+
+            cc_list = ','.join(cc_split)
+            mail_values['email_cc'] = cc_list
+
+        # Add the attachments from the declaration_record into the mail_values list
+        mail_values['attachment_ids'] = [(6, 0, self.attachment_ids.ids)]
+
+        # Create and queue the email for sending using the values from the mail.message
         mail_id = self.env['mail.mail'].create(mail_values)
 
     def action_email_owner(self):
